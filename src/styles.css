@@ -1,0 +1,89 @@
+/*@import url('https://fonts.googleapis.com/css2?family=NTR&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --font-noto-sans: "Noto Sans", sans-serif;
+  --font-ntr: "NTR", sans-serif;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;*/
+@import url('https://fonts.googleapis.com/css2?family=NTR&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300..900;1,300..900&family=Noto+Serif:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;1,400&family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --font-noto-sans: "Noto Sans", sans-serif;
+  --font-ntr: "NTR", sans-serif;
+
+  /* Complementary Fonts */
+  --font-merriweather: "Merriweather", serif;
+  --font-noto-serif: "Noto Serif", serif;
+  --font-open-sans: "Open Sans", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-pt-serif: "PT Serif", serif;
+
+  /* Contrasting Fonts */
+  --font-playfair: "Playfair Display", serif;
+  --font-lora: "Lora", serif;
+  --font-raleway: "Raleway", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-work-sans: "Work Sans", sans-serif;
+
+  --bg-color1: rgb(39, 43, 40);
+  --bg-color1-opacity: rgba(39, 43, 40, 0.8);
+  --bg-color2: rgb(23, 27, 24);
+  --bg-color2-opacity: rgba(23, 27, 24, 0.8);
+  --primary-color:  rgb(0, 191, 139);
+  --secondary-color: rgb(252, 252, 252);
+}
+
+h1{
+  font-family: var(--font-family-2);
+  color:#00bf8b
+}
+header{
+  margin: auto;
+  width:80%;
+}
+
+.navbar li{
+  display: inline;
+}
+.navbar-section{
+
+}
+.navbar-link{}
+
+.hero {
+  margin: auto;
+  width: 80%;
+  border: 5px solid var(--primary-color);
+  padding: 20px;
+  background: linear-gradient(135deg, var(--bg-color2-opacity) 60%, black 100%);
+  border-radius: 24px;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: url('assets/images/waterfall.gif') no-repeat center center fixed;
+  background-size: cover;
+  pointer-events: none;
+}
+
+/*Sets CRT effect on window*/
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
