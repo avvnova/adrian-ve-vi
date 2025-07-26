@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import './LandingPage.css'; // Assuming you have a separate CSS file for the landing page styles
 import MainSite from './MainSite';
 
 function App() {
@@ -18,12 +19,9 @@ function App() {
   return (
     <div className="landing-page" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
       <h1>Welcome to Adrian Velez Villanueva's Website</h1>
-      <p>Select a section to enter:</p>
-      <div style={{ display: 'flex', gap: '1rem', margin: '2rem 0' }}>
-        <button onClick={() => handleEnter('about')}>About</button>
-        <button onClick={() => handleEnter('professional')}>Professional</button>
-        <button onClick={() => handleEnter('hobbies')}>Hobbies</button>
-      </div>
+      <button style={{ marginTop: '2rem', padding: '1rem 2rem', fontSize: '1.2rem' }} onClick={() => handleEnter('about')}>
+        Enter
+      </button>
     </div>
   );
 }

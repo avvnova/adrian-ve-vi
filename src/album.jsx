@@ -1,1 +1,1 @@
-<div></div>
+export default function Album() {}
