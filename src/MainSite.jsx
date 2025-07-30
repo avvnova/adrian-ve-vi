@@ -2,6 +2,10 @@
 // This component contains the main site content previously in index.jsx
 
 import { useState } from 'react';
+import { Sidebar, // for quests 
+  
+   Modal,
+    ClickAwayListener} from '@mui/base';
 import About from './About';
 import Professional from './Professional';
 import Hobbies from './Hobbies';

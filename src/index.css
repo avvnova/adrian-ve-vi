@@ -1,23 +1,8 @@
-@import "tailwindcss";
-
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
@@ -35,51 +20,53 @@
   }
 }
 
-.card {
-  padding: 2em;
+
+ :root {
+  --mint-50:  #e6f9f4;
+  --mint-100: #ccf3e9;
+  --mint-200: #99e7d4;
+  --mint-300: #66dbbf;
+  --mint-400: #33cfa9;
+  --mint-500: #00be8c;
+  --mint-600: #009b72;
+  --mint-700: #007959;
+  --mint-800: #00563f;
+  --mint-900: #003326;
+
+  --brunswick-green: #034C3C;
+  --skyrim-white: #f5f5f5;
+  --black-olive: #282d28;
+  --bittersweet-shimmer: #bf4f51;
+
+ }
+
+ @font-face{
+  font-family: 'Futura-Condensed';
+  src: url('src/assets/Fonts/Futura Condensed Light.ttf') format('truetype');
 }
-
-.read-the-docs {
-  color: #888;
+@font-face{
+  font-family: 'Futura-Condensed';
+  src: url('src/assets/Fonts/Futura Condensed Bold.ttf') format('truetype');
 }
-/*@import url('https://fonts.googleapis.com/css2?family=NTR&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root {
-  --font-noto-sans: "Noto Sans", sans-serif;
-  --font-ntr: "NTR", sans-serif;
-  --normal-font: 400;
-  --bold-font: 700;
-  --bolder-font: 900;*/
-
-:root {
-  --font-noto-sans: "Noto Sans", sans-serif;
-  --font-ntr: "NTR", sans-serif;
-
-  /* Complementary Fonts */
-  --font-merriweather: "Merriweather", serif;
-  --font-noto-serif: "Noto Serif", serif;
-  --font-open-sans: "Open Sans", sans-serif;
-  --font-roboto: "Roboto", sans-serif;
-  --font-pt-serif: "PT Serif", serif;
-
-  /* Contrasting Fonts */
-  --font-playfair: "Playfair Display", serif;
-  --font-lora: "Lora", serif;
-  --font-raleway: "Raleway", sans-serif;
-  --font-montserrat: "Montserrat", sans-serif;
-  --font-work-sans: "Work Sans", sans-serif;
-
-  --bg-color1: rgb(39, 43, 40);
-  --bg-color1-opacity: rgba(39, 43, 40, 0.8);
-  --bg-color2: rgb(23, 27, 24);
-  --bg-color2-opacity: rgba(23, 27, 24, 0.8);
-  --primary-color:  rgb(0, 191, 139);
-  --secondary-color: rgb(252, 252, 252);
+@font-face{
+  font-family: 'Futura-Condensed';
+  src: url('src/assets/Fonts/Futura Condensed Medium.ttf') format('truetype');
 }
-
-h1{
-  font-family: var(--font-family-2);
-  color:#00bf8b
+@font-face{
+  font-family: 'Balgruf';
+  src: url('src/assets/Fonts/Balgruf Italic.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'Balgruf';
+  src: url('src/assets/Fonts/Balgruf Medium.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'Typo3';
+  src: url('src/assets/Fonts/Typo3 Light.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'Typo3';
+  src: url('src/assets/Fonts/Typo3 Medium.ttf') format('truetype');
 }
 header{
   margin: auto;

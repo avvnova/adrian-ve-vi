@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import './App.css';
-import './LandingPage.css'; // Assuming you have a separate CSS file for the landing page styles
+import './index.css';
+import StyledButton from './Button';
 import MainSite from './MainSite';
 
 // App is the root component that manages whether to show the landing page or the main site
@@ -26,6 +26,10 @@ function App() {
     <div
       className="landing-page"
       style={{
+        backgroundImage: 'url("src/assets/Waterfall Background.gif")',
+        backgroundSize: 'contain',
+        backgroundPositionY: 'center',
+        backgroundRepeat: 'no-repeat',
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
@@ -33,14 +37,14 @@ function App() {
         justifyContent: 'center'
       }}
     >
-      <h1>Welcome to Adrian Velez Villanueva's Website</h1>
+      <h1 style={{ fontFamily: "Balgruf" }}>Adrian Velez Villanueva</h1>
       {/* Button to enter the main site, defaults to 'about' section */}
-      <button
-        style={{ marginTop: '2rem', padding: '1rem 2rem', fontSize: '1.2rem' }}
+      <StyledButton 
+        label="Enter Main Site"
         onClick={() => handleEnter('about')}
       >
         Enter
-      </button>
+      </StyledButton>
     </div>
   );
 }
