@@ -1,7 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adrian Velez Villanueva</title>
@@ -10,93 +11,129 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
 
-    // MainSite.jsx
-// This component contains the main site content previously in index.jsx
+    <!--track which section to show first in the main site-->
+
+    <!-- Handler for entering the main site, sets the initial section-->
+
+    <!-- If showMain is true, render the main site with the selected section-->
+
+    <!-- Otherwise, render the landing page-->
 
     <div className="crt">
-      {/* Background image overlay */}
-      <div className="background-image" />
-      <header>
-        {/* Navigation bar for switching sections */}
-        <div id="navbar-container" style={{ display: 'inline' }}>
-          <ul className="navbar">
-            <li>
-              {/* Button to show About section */}
-              <button
-                className="navbar-section"
-                style={{ background: 'none', border: 'none', cursor: 'pointer' }}
-                onClick={() => setSection('about')}
-              >
-                About
-              </button>
-            </li>
-            <li>
-              {/* Button to show Professional section */}
-              <button
-                className="navbar-section"
-                style={{ background: 'none', border: 'none', cursor: 'pointer' }}
-                onClick={() => setSection('professional')}
-              >
-                Professional
-              </button>
-            </li>
-            <li>
-              {/* Button to show Hobbies section */}
-              <button
-                className="navbar-section"
-                style={{ background: 'none', border: 'none', cursor: 'pointer' }}
-                onClick={() => setSection('hobbies')}
-              >
-                Hobbies
-              </button>
-            </li>
-          </ul>
+      <!-- Background image overlay -->
+      <div className="background-image">
+        <header>
+          <!-- Navigation bar for switching sections -->
+          <div id="navbar-container">
+            <ul className="navbar">
+              <li>
+                <!-- Button to show About section -->
+                <button className="navbar-section">
+                  <!--onClick={() => setSection('about')}-->
+                  About
+                </button>
+              </li>
+              <li>
+                <!-- Button to show Professional section -->
+                <button className="navbar-section">
+                  <!--onClick={() => setSection('professional')}-->
+                  Professional
+                </button>
+              </li>
+              <li>
+                <!-- Button to show Hobbies section -->
+                <button className="navbar-section">Hobbies</button>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <main>
+          <!-- Sidebar (currently only one item) -->
+          <div id="sidebar-container">
+            <ul className="sidebar">
+              <li>one</li>
+            </ul>
+          </div>
+          <!-- Main content area where the selected panel is rendered -->
+          <section className="content">
+            <Panel />
+          </section>
+        </main>
+        <!-- Social media links -->
+        <div className="socials">
+          <a
+            href="https://linktr.ee/adrian_velvil"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="assets/icons/linktree.png"
+              alt="Linktree"
+              loading="lazy"
+              className="socicon"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/adrian-velez-villanueva/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="assets/icons/linkedin.png"
+              alt="Linkedin"
+              loading="lazy"
+              className="socicon"
+            />
+          </a>
+          <a
+            href="https://github.com/avvnova"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="assets/icons/github.png"
+              alt="Github"
+              loading="lazy"
+              className="socicon"
+            />
+          </a>
         </div>
-      </header>
-      <main style={{ width: '100%' }}>
-        {/* Sidebar (currently only one item) */}
-        <div id="sidebar-container">
-          <ul className="sidebar">
-            <li>one</li>
-          </ul>
-        </div>
-        {/* Main content area where the selected panel is rendered */}
-        <section className="content" style={{ minHeight: '400px' }}>
-          <Panel />
-        </section>
-      </main>
-      {/* Social media links */}
-      <div className="socials">
-        <a href="https://linktr.ee/adrian_velvil" target="_blank" rel="noopener noreferrer">
-          <img src="assets/icons/linktree.png" alt="Linktree" loading="lazy" className="socicon" />
-        </a>
-        <a href="https://www.linkedin.com/in/adrian-velez-villanueva/" target="_blank" rel="noopener noreferrer">
-          <img src="assets/icons/linkedin.png" alt="Linkedin" loading="lazy" className="socicon" />
-        </a>
-        <a href="https://github.com/avvnova" target="_blank" rel="noopener noreferrer">
-          <img src="assets/icons/github.png" alt="Github" loading="lazy" className="socicon" />
-        </a>
+        <!-- Footer with credits and copyright -->
+        <footer>
+          <p className="copy">© Copyright 2024</p>
+          <p className="copy">
+            Built by
+            <a
+              href="https://github.com/avvnova"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Adrian Velez Villanueva (avvnova)</a
+            >
+            <br />
+            Resources and Boilerplate by
+            <a
+              href="https://twitter.com/koladechris"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Kolade Chris (Ksound)</a
+            >
+            <br />
+            Icons by{' '}
+            <a
+              href="https://icons8.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Icons8</a
+            >
+            <a
+              href="https://lordicon.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Icons by Lordicon.com</a
+            >
+          </p>
+        </footer>
       </div>
-      {/* Footer with credits and copyright */}
-      <footer>
-        <p className="copy">© Copyright 2024</p>
-        <p className="copy">
-          Built by
-          <a href="https://github.com/avvnova" target="_blank" rel="noopener noreferrer">Adrian Velez Villanueva (avvnova)</a>
-          <br />
-          Resources and Boilerplate by
-          <a href="https://twitter.com/koladechris" target="_blank" rel="noopener noreferrer">Kolade Chris (Ksound)</a>
-          <br />
-          Icons by{' '}
-          <a href="https://icons8.com/" target="_blank" rel="noopener noreferrer">Icons8</a>
-          <a href="https://lordicon.com/" target="_blank" rel="noopener noreferrer">Icons by Lordicon.com</a>
-        </p>
-      </footer>
     </div>
-  );
-}
-
-export default MainSite;
-
   </body>
 </html>
