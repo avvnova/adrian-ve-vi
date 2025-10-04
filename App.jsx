@@ -5,8 +5,6 @@ import MainSite from './MainSite';
 
 // App is the root component that manages whether to show the landing page or the main site
 function App() {
-  // State to control whether the main site is shown
-  const [showMain, setShowMain] = useState(false);
   // State to track which section to show first in the main site
   const [section, setSection] = useState('about');
 
