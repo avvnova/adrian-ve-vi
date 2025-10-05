@@ -20,27 +20,25 @@
   }
 }
 
-
  :root {
-  --mint-50:  #e6f9f4;
-  --mint-100: #ccf3e9;
-  --mint-200: #99e7d4;
-  --mint-300: #66dbbf;
-  --mint-400: #33cfa9;
-  --mint-500: #00be8c;
-  --mint-600: #009b72;
-  --mint-700: #007959;
-  --mint-800: #00563f;
-  --mint-900: #003326;
-
   --brunswick-green: #034C3C;
-  --winer-white: #f5f5f5;
-  --black-olive: #282d28;
-  --bittersweet-shimmer: #bf4f51;
+    --brunswick-green-plus: #236C5C;
+    --brunswick-green-minus: #002C1C;
 
+  --wintry-white: #f5f5f5;
+    --wintry-white-plus: #fffafa;
+    --wintry-white-minus: #d5d5d5;
+
+  --olive-black: #282d28;
+    --olive-black-plus: #484d48;
+    --olive-black-minus: #080d08;
+
+  --bittersweet-shimmer: #bf4f51;
+    --bittersweet-shimmer-plus: #df6f71;
+    --bittersweet-shimmer-minus: #9f2f31;
  }
 
- @font-face{
+@font-face{
   font-family: 'Futura-Condensed';
   src: url('src/assets/Fonts/Futura Condensed Light.ttf') format('truetype');
 }
@@ -70,16 +68,12 @@
 }
 header{
   margin: auto;
-  width:80%;
+  width: 80%;
 }
 
 .navbar li{
   display: inline;
 }
-.navbar-section{
-
-}
-.navbar-link{}
 
 .hero {
   margin: auto;
