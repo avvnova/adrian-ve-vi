@@ -24,28 +24,39 @@
       <div className="background-image">
         <header>
           <!-- Navigation bar for switching sections -->
-          <div id="navbar-container">
-            <ul className="navbar">
-              <li>
-                <!-- Button to show About section -->
-                <button className="navbar-section">
-                  <!--onClick={() => setSection('about')}-->
-                  About
-                </button>
-              </li>
-              <li>
-                <!-- Button to show Professional section -->
-                <button className="navbar-section">
-                  <!--onClick={() => setSection('professional')}-->
-                  Professional
-                </button>
-              </li>
-              <li>
-                <!-- Button to show Hobbies section -->
-                <button className="navbar-section">Hobbies</button>
-              </li>
-            </ul>
-          </div>
+            <div class="order">
+              <div class="tab">
+                <button class="tablinks" data-origin="London">London</button>
+                <button class="tablinks" data-origin="Paris">Paris</button>
+                <button class="tablinks" data-origin="Tokyo">Tokyo</button>
+              </div>
+
+              <div data-target="London" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+              </div>
+
+              <div data-target="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+              </div>
+
+              <div data-target="Tokyo" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+              </div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0044/8718/4457/files/800x600_Wallpaper_Blue_Sky.png?v=1646897329"
+                class="tabimage"
+                data-target="London"
+              />
+              <img
+                src="https://cdn.shopify.com/s/files/1/0044/8718/4457/files/Auckland_Skyline_800x600_80c6b2c0-28bc-4885-8440-a6da7de39c82.jpg?v=1646897329"
+                class="tabimage"
+                data-target="Paris"
+              />
+            </div>
+            <script src="tabs.js"></script>
         </header>
         <main>
           <!-- Sidebar (currently only one item) -->
@@ -110,7 +121,6 @@
               >Adrian Velez Villanueva (avvnova)</a
             >
             <br />
-           
           </p>
         </footer>
       </div>
