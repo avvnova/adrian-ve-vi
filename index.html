@@ -21,8 +21,13 @@
     <div className="crt">
       <!-- Background image overlay -->
       <div className="background-image">
-        <header>
-          <!-- Navigation bar for switching sections -->
+      <main>
+      <div class="crt">
+      <div class="flexbox-container" style="display:flex;">
+        <div id="lhs-wrapper" class="wrapper">
+          <div id="lhs-section">
+            <!-- Navigation bar for switching sections -->
+            <!-- Navigation bar for switching sections -->
             <div class="order">
               <div class="tab">
                 <button class="tablinks" data-origin="London">London</button>
@@ -56,34 +61,15 @@
               />
             </div>
             <script src="tabs.js"></script>
-        </header>
-        <main>
           <!-- Sidebar (currently only one item) -->
-          <div id="sidebar-container">
-            <ul className="sidebar">
-              <li>one</li>
-            </ul>
-      <main>
-        <div class="crt">
-      <div class="flexbox-container" style="display:flex;">
-        <div id="lhs-wrapper" class="wrapper">
-          <div id="lhs-section">
-            <!-- Navigation bar for switching sections -->
-            <div id="navbar-container">
-              <i class="nf nf-custom-c"></i>
-              <ul class="navbar">
-                <li>
-                  <button class="navbar-section"> About </button>
-                </li>
-                <li>
-                  <button class="navbar-section"> Professional </button>
-                </li>
-                <li>
-                  <button class="navbar-section"> Hobbies </button>
-                </li>
-              </ul>
-            </div>  
+          
             <div id="content-container">
+              <div id="sidebar-container">
+                <ul className="sidebar">
+                <li>one</li>
+              </ul>
+              </div>
+              <content></content>
               <!--where we insert tab content-->
             </div>
           </div>
