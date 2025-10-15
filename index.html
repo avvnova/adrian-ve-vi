@@ -8,8 +8,6 @@
     <title>Adrian Velez Villanueva</title>
   </head>
   <body>
-    <script type="module" src="/src/main.jsx"></script>
-
     <!--track which section to show first in the main site-->
 
     <!-- Handler for entering the main site, sets the initial section-->
@@ -17,113 +15,107 @@
     <!-- If showMain is true, render the main site with the selected section-->
 
     <!-- Otherwise, render the landing page-->
-
-    <div className="crt">
-      <!-- Background image overlay -->
-      <div className="background-image">
-      <main>
-      <div class="crt">
-      <div class="flexbox-container" style="display:flex;">
-        <div id="lhs-wrapper" class="wrapper flexbox-item">
-          <div id="lhs-section">
-            <!-- Navigation bar for switching sections -->
-            <div class="order">
-              <div class="tab">
-                <button class="tablinks" data-origin="London">London</button>
-                <button class="tablinks" data-origin="Paris">Paris</button>
-                <button class="tablinks" data-origin="Tokyo">Tokyo</button>
-              </div>
-
-              <div data-target="London" class="tabcontent">
-                <h3>London</h3>
-                <p>London is the capital city of England.</p>
-              </div>
-
-              <div data-target="Paris" class="tabcontent">
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-
-              <div data-target="Tokyo" class="tabcontent">
-                <h3>Tokyo</h3>
-                <p>Tokyo is the capital of Japan.</p>
-              </div>
-              <img
-                src="https://cdn.shopify.com/s/files/1/0044/8718/4457/files/800x600_Wallpaper_Blue_Sky.png?v=1646897329"
-                class="tabimage"
-                data-target="London"
-              />
-              <img
-                src="https://cdn.shopify.com/s/files/1/0044/8718/4457/files/Auckland_Skyline_800x600_80c6b2c0-28bc-4885-8440-a6da7de39c82.jpg?v=1646897329"
-                class="tabimage"
-                data-target="Paris"
-              />
+    <main>
+    <div class="crt">
+    <div class="flexbox-container" style="display:flex;">
+      <div id="lhs-wrapper" class="wrapper flexbox-item">
+          <!-- Navigation bar for switching sections -->
+          <div class="order">
+            <div class="tab">
+              <button class="tablinks" data-origin="London">London</button>
+              <button class="tablinks" data-origin="Paris">Paris</button>
+              <button class="tablinks" data-origin="Tokyo">Tokyo</button>
             </div>
-            <script src="tabs.js"></script>
-            <!-- Sidebar (currently only one item) -->
-            <div id="content-container">
-              <div id="sidebar-container">
-                <ul className="sidebar">
-                <li>one</li>
-              </ul>
-              </div>
-              <content></content>
-              <!--where we insert tab content-->
+
+            <div data-target="London" class="tabcontent">
+              <h3>London</h3>
+              <p>London is the capital city of England.</p>
             </div>
+
+            <div data-target="Paris" class="tabcontent">
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p>
+            </div>
+
+            <div data-target="Tokyo" class="tabcontent">
+              <h3>Tokyo</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0044/8718/4457/files/800x600_Wallpaper_Blue_Sky.png?v=1646897329"
+              class="tabimage"
+              data-target="London"
+            />
+            <img
+              src="https://cdn.shopify.com/s/files/1/0044/8718/4457/files/Auckland_Skyline_800x600_80c6b2c0-28bc-4885-8440-a6da7de39c82.jpg?v=1646897329"
+              class="tabimage"
+              data-target="Paris"
+            />
           </div>
-        </div>
-
-
-        <div id="rhs-wrapper" class="wrapper flexbox-item">
-          <div id="rhs-section" class="side-section">
-            <div id="logo-wrapper">
-              <img id="logo" alt="-.-" src="-_-.jpg"></div> <!--We're gonna need this to be an svg if we want a glow effect.-->
-              <script src="logo-animation.js"></script>
-            </div> 
-            <text></text>           
-          </div>    
-        </div>
+          <script src="scripts/tabs.js"></script>
+          <!-- Sidebar (currently only one item) -->
+          <div id="content-container">
+            <div id="sidebar-container">
+              <ul className="sidebar">
+              <li>one</li>
+            </ul>
+            </div>
+            <content></content>
+            <!--where we insert tab content-->
+          </div>
       </div>
-      </main>
-      <footer class="flexbox-container" style="display:flex;">
-        <div class="socials">
-          <a 
-            href="https://linktr.ee/adrian_velvil" target="_blank">
-            <img 
-            src="assets/icons/linktree.png" alt="Linktree" loading="lazy" class="socicon"/>
+
+
+      <div id="rhs-wrapper" class="wrapper flexbox-item">
+          <div id="logo-wrapper">
+            <img id="logo" alt="-.-" src="assets/-_-.jpg"> <!--We're gonna need this to be an svg if we want a glow effect.-->
+            <script src="scripts/logo-animation.js"></script>
+          </div> 
+          <text></text>           
+        </div>    
+      </div>
+    </div>
+    </main>
+    <footer class="flexbox-container" style="display:flex;">
+      <div class="socials">
+        <a 
+          href="https://linktr.ee/adrian_velvil" target="_blank">
+          <img 
+          src="assets/icons/linktree.png" alt="Linktree" loading="lazy" class="socicon"/>
+        </a>
+        <a 
+          href="https://www.linkedin.com/in/adrian-velez-villanueva/" target="_blank">
+          <img
+            src="assets/icons/linkedin.png" alt="Linkedin" loading="lazy" class="socicon"
+          />
+        </a>
+        <a 
+        href="https://github.com/avvnova" target="_blank">
+          <img
+            src="assets/icons/github.png" alt="Github" loading="lazy" class="socicon"
+          />
+        </a>
+      </div>
+      <div id="credits">
+      <!-- Footer with credits and copyright -->
+        <span class="copy"> | © Copyright 2024 </span>
+        <span class="copy"> Built by
+          <a
+            href="https://github.com/avvnova"
+            target="_blank">
+            Adrian Velez Villanueva (avvnova)
           </a>
-          <a 
-            href="https://www.linkedin.com/in/adrian-velez-villanueva/" target="_blank">
-            <img
-              src="assets/icons/linkedin.png" alt="Linkedin" loading="lazy" class="socicon"
-            />
-          </a>
-          <a 
-          href="https://github.com/avvnova" target="_blank">
-            <img
-              src="assets/icons/github.png" alt="Github" loading="lazy" class="socicon"
-            />
-          </a>
+        </span>
+      </div>
+      <div id="theme-selector">
+        <button onclick="dropdownFn()" class="dropbtn">main</button>
+        <div id="themes" class="theme-list">
+          <a href="#">winter-rose</a>
+          <a href="#">blossom-orange</a>
+          <a href="#">nightwing-blue</a>
         </div>
-        <div id="credits">
-        <!-- Footer with credits and copyright -->
-          <p class="copy">© Copyright 2024</p>
-          <p class="copy"> Built by
-            <a 
-              href="https://github.com/avvnova"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Adrian Velez Villanueva (avvnova)</a
-            >
-            <br />
-              target="_blank">
-              Adrian Velez Villanueva (avvnova)
-            </a>
-          </p>
-        </div>
-        <div id="theme-selector">
-            <!--themed like a git branch selector-->
-        </div>
-      </footer>
+        <script src="scripts/theme.js"></script>
+      </div>
+    </footer>
   </body>
 </html>
