@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adrian Velez Villanueva</title>
   </head>
   <body>
-    <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
 
     <!--track which section to show first in the main site-->
@@ -64,66 +63,82 @@
             <ul className="sidebar">
               <li>one</li>
             </ul>
+      <main>
+        <div class="crt">
+      <div class="flexbox-container" style="display:flex;">
+        <div id="lhs-wrapper" class="wrapper">
+          <div id="lhs-section">
+            <!-- Navigation bar for switching sections -->
+            <div id="navbar-container">
+              <i class="nf nf-custom-c"></i>
+              <ul class="navbar">
+                <li>
+                  <button class="navbar-section"> About </button>
+                </li>
+                <li>
+                  <button class="navbar-section"> Professional </button>
+                </li>
+                <li>
+                  <button class="navbar-section"> Hobbies </button>
+                </li>
+              </ul>
+            </div>  
+            <div id="content-container">
+              <!--where we insert tab content-->
+            </div>
           </div>
-          <!-- Main content area where the selected panel is rendered -->
-          <section className="content">
-            <Panel />
-          </section>
-        </main>
-        <!-- Social media links -->
-        <div className="socials">
-          <a
-            href="https://linktr.ee/adrian_velvil"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        </div>
+        ---
+        <div id="rhs-wrapper" class="wrapper">
+          <div id="rhs-section" class="side-section">
+            <div id="logo-wrapper">
+              <img id="logo" alt="-.-" src="-_-.jpg"></div> <!--We're gonna need this to be an svg if we want a glow effect.-->
+              <script src="logo-animation.js"></script>
+            </div> 
+            <text></text>           
+          </div>    
+        </div>
+      </div>
+      </main>
+      <footer class="flexbox-container" style="display:flex;">
+        <div class="socials">
+          <a 
+            href="https://linktr.ee/adrian_velvil" target="_blank">
+            <img 
+            src="assets/icons/linktree.png" alt="Linktree" loading="lazy" class="socicon"/>
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/adrian-velez-villanueva/" target="_blank">
             <img
-              src="assets/icons/linktree.png"
-              alt="Linktree"
-              loading="lazy"
-              className="socicon"
+              src="assets/icons/linkedin.png" alt="Linkedin" loading="lazy" class="socicon"
             />
           </a>
-          <a
-            href="https://www.linkedin.com/in/adrian-velez-villanueva/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a 
+          href="https://github.com/avvnova" target="_blank">
             <img
-              src="assets/icons/linkedin.png"
-              alt="Linkedin"
-              loading="lazy"
-              className="socicon"
-            />
-          </a>
-          <a
-            href="https://github.com/avvnova"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="assets/icons/github.png"
-              alt="Github"
-              loading="lazy"
-              className="socicon"
+              src="assets/icons/github.png" alt="Github" loading="lazy" class="socicon"
             />
           </a>
         </div>
+        <div id="credits">
         <!-- Footer with credits and copyright -->
-        <footer>
-          <p className="copy">© Copyright 2024</p>
-          <p className="copy">
-            Built by
-            <a
+          <p class="copy">© Copyright 2024</p>
+          <p class="copy"> Built by
+            <a 
               href="https://github.com/avvnova"
               target="_blank"
               rel="noopener noreferrer"
               >Adrian Velez Villanueva (avvnova)</a
             >
             <br />
+              target="_blank">
+              Adrian Velez Villanueva (avvnova)
+            </a>
           </p>
-        </footer>
-      </div>
-    </div>
+        </div>
+        <div id="theme-selector">
+            <!--themed like a git branch selector-->
+        </div>
+      </footer>
   </body>
 </html>

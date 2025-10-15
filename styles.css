@@ -1,26 +1,5 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
- :root {
+:root {
+  /* Theme 1 */
   --brunswick-green: #034C3C;
     --brunswick-green-plus: #236C5C;
     --brunswick-green-minus: #002C1C;
@@ -29,71 +8,57 @@
     --wintry-white-plus: #fffafa;
     --wintry-white-minus: #d5d5d5;
 
-  --olive-black: #282d28;
-    --olive-black-plus: #484d48;
-    --olive-black-minus: #080d08;
-
   --bittersweet-shimmer: #bf4f51;
     --bittersweet-shimmer-plus: #df6f71;
     --bittersweet-shimmer-minus: #9f2f31;
- }
+
+ /* Theme 2 */
+  --maize: #fdef83ff;
+  --princeton-orange: #ff950aff;
+  --tigers-eye: #b86800ff;
+  --dark-purple: #160f29ff;
+  --rich-black: #000011ff;
+}
 
 @font-face{
   font-family: 'Futura-Condensed';
-  src: url('src/assets/Fonts/Futura Condensed Light.ttf') format('truetype');
+  src: url('/assets/Fonts/Futura Condensed Light.ttf') format('truetype');
 }
 @font-face{
   font-family: 'Futura-Condensed';
-  src: url('src/assets/Fonts/Futura Condensed Bold.ttf') format('truetype');
+  src: url('/assets/Fonts/Futura Condensed Bold.ttf') format('truetype');
 }
 @font-face{
   font-family: 'Futura-Condensed';
-  src: url('src/assets/Fonts/Futura Condensed Medium.ttf') format('truetype');
+  src: url('/assets/Fonts/Futura Condensed Medium.ttf') format('truetype');
 }
 @font-face{
   font-family: 'Balgruf';
-  src: url('src/assets/Fonts/Balgruf Italic.ttf') format('truetype');
+  src: url('/assets/Fonts/Balgruf Italic.ttf') format('truetype');
 }
 @font-face{
   font-family: 'Balgruf';
-  src: url('src/assets/Fonts/Balgruf Medium.ttf') format('truetype');
+  src: url('/assets/Fonts/Balgruf Medium.ttf') format('truetype');
 }
 @font-face{
   font-family: 'Typo3';
-  src: url('src/assets/Fonts/Typo3 Light.ttf') format('truetype');
+  src: url('/assets/Fonts/Typo3 Light.ttf') format('truetype');
 }
 @font-face{
   font-family: 'Typo3';
-  src: url('src/assets/Fonts/Typo3 Medium.ttf') format('truetype');
+  src: url('/assets/Fonts/Typo3 Medium.ttf') format('truetype');
 }
-header{
-  margin: auto;
-  width: 80%;
+@font-face{
+  font-family: 'NerdFont';
+  src: url('/assets/Fonts/SymbolsNerdFont-Regular.ttf') format('truetype');
 }
-
-.navbar li{
-  display: inline;
-}
-
-.hero {
-  margin: auto;
-  width: 80%;
-  border: 5px solid var(--primary-color);
-  padding: 20px;
-  background: linear-gradient(135deg, var(--bg-color2-opacity) 60%, black 100%);
-  border-radius: 24px;
+@font-face{
+  font-family: 'NerdFont';
+  src: url('/assets/Fonts/SymbolsNerdFontMono-Regular.ttf') format('truetype');
 }
 
-.background-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  background: url('assets/images/waterfall.gif') no-repeat center center fixed;
-  background-size: cover;
-  pointer-events: none;
+body{
+  background-image: url();
 }
 
 /*Sets CRT effect on window*/
@@ -186,3 +151,22 @@ header{
     border: 1px solid #ccc;
     border-top: none;
   }
+.navbar li{
+  display: inline;
+}
+
+#logo-wrapper{
+  position: relative;
+}
+
+#logo{
+  position: absolute;
+  transform:rotate(-0.10turn);
+}
+
+footer{
+  display: inline;
+  position:fixed;
+  bottom: 0%;
+  height: 5% vh;
+}
