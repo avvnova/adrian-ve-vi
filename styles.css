@@ -57,8 +57,21 @@
   src: url('/assets/Fonts/SymbolsNerdFontMono-Regular.ttf') format('truetype');
 }
 
+a{}
+
+p{}
+
+h1{}
+
 body{
   background-image: url();
+}
+
+footer{
+  display: inline;
+  position:fixed;
+  bottom: 0%;
+  height: 5% vh;
 }
 
 /*Sets CRT effect on window*/
@@ -75,6 +88,13 @@ body{
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
 }
+
+.flexbox-container{
+  flex-direction: row;
+  justify-content: space-;
+}
+
+.flexbox-item{ /*flex-grow: 1;*/ }
 
 .order {
   display: grid;
@@ -117,28 +137,19 @@ body{
   border: 1px solid #ccc;
   border-top: none;
 }
+
 .tabimage {
   display: none;
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
 }
-.navbar li{
-  display: inline;
-}
-
-#logo-wrapper{
-  position: relative;
-}
-
+---
+/* IDs */
+#rhs-wrapper{ flex-grow: 2; }
+#lhs-wrapper{ flex-grow: 1; }
+#logo-wrapper{ position: relative; }
 #logo{
   position: absolute;
   transform:rotate(-0.10turn);
-}
-
-footer{
-  display: inline;
-  position:fixed;
-  bottom: 0%;
-  height: 5% vh;
 }
