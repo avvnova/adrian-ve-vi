@@ -91,10 +91,14 @@ footer{
 
 .flexbox-container{
   flex-direction: row;
-  justify-content: space-;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.flexbox-item{ /*flex-grow: 1;*/ }
+.flexbox-item{ flex: 5; }
+
+#lhs-wrapper{  }
+#rhs-wrapper{  }
 
 .order {
   display: grid;
@@ -146,8 +150,7 @@ footer{
 }
 ---
 /* IDs */
-#rhs-wrapper{ flex-grow: 2; }
-#lhs-wrapper{ flex-grow: 1; }
+
 #logo-wrapper{ position: relative; }
 #logo{
   position: absolute;
