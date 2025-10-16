@@ -65,18 +65,14 @@ html, body {
   font-family: 'NerdFont';
   src: url('/assets/Fonts/SymbolsNerdFontMono-Regular.ttf') format('truetype');
 }
-
-a{}
-
-p{}
-
-h1{}
-
-body{
-  background-image: url();
+.crt {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ pointer-events: none;
 }
-
-/*Sets CRT effect on window*/
 .crt::before {
   content: " ";
   display: block;
@@ -86,25 +82,23 @@ body{
   bottom: 0;
   right: 0;
   background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-  z-index: 2;
+  z-index: 0;
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
   width: 100vw;
   height: 100vh;
 }
-
 .flexbox-container{
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   align-items: stretch;
   width: 100vw;
 }
-
-footer{
-  position:fixed;
+.margin{
+  position: fixed;
   justify-content: space-between;
-  bottom: 0%;
-  height: 5% vh;
+  height: 2.5vh;
+  z-index: 3
 }
 
 .flexbox-item{ min-width: 0; }
@@ -121,7 +115,15 @@ footer{
 #logo{
   position: absolute;
   transform:rotate(-0.10turn);
+  box-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #00f;
+  transition: box-shadow 0.5s ease-in-out;
 }
-#credits{
-  display: inline;
-}
+#logo.glowing { box-shadow: 0 0 10px #f0f, 0 0 20px #f0f, 0 0 30px #f0f; }
+#credits{ display: inline; }
+
+a{}
+p{}
+h1{}
+body{ background-image: url(); }
+header{ top: 0%; }
+footer{ bottom: 0%; }

@@ -12,3 +12,9 @@ window.onload = function() {
     }
   }, 1000);
 };
+
+const logo = document.getElementById("logo");
+
+setInterval(() => {
+  logo.classList.toggle("glowing");
+}, 1000);

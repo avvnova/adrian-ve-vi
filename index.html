@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    
+
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/theme-selector.css" />
     <link rel="stylesheet" href="styles/tabs.css" />
@@ -20,21 +20,25 @@
     <!-- If showMain is true, render the main site with the selected section-->
 
     <!-- Otherwise, render the landing page-->
+    <header class="flexbox-container margin">Adrian Velez Villanueva</header>
+
     <div class="crt"></div>
-    <main>
-    <div class="flexbox-container">
+
+    <main class="flexbox-container">
       <div id="lhs-wrapper" class="wrapper flexbox-item">
-        <!-- Navigation bar for switching sections -->
         <div class="order">
           <div class="tab">
             <button class="tablinks" data-origin="About">About</button>
-            <button class="tablinks" data-origin="Professional">Professional</button>
+            <button class="tablinks" data-origin="Professional">
+              Professional
+            </button>
             <button class="tablinks" data-origin="Hobbies">Hobbies</button>
           </div>
+
           <div data-target="About" class="tabcontent">
             <div id="sidebar-container" class="tab-column">
               <ul className="sidebar">
-              <li>one</li>
+                <li>one</li>
               </ul>
             </div>
             <div id="main-container" class="tab-column">
@@ -46,7 +50,7 @@
           <div data-target="Professional" class="tabcontent">
             <div id="sidebar-container" class="tab-column">
               <ul className="sidebar">
-              <li>one</li>
+                <li>one</li>
               </ul>
             </div>
             <div id="main-container" class="tab-column">
@@ -58,7 +62,7 @@
           <div data-target="Hobbies" class="tabcontent">
             <div id="sidebar-container" class="tab-column">
               <ul className="sidebar">
-              <li>one</li>
+                <li>one</li>
               </ul>
             </div>
             <div id="main-container" class="tab-column">
@@ -66,61 +70,65 @@
               <p>Tokyo is the capital of Japan.</p>
             </div>
           </div>
-          <img
-            src=""
-            class="tabimage"
-            data-target="About"
-          />
-          <img
-            src=""
-            class="tabimage"
-            data-target="Professional"
-          />
+
+          <img src="" class="tabimage" data-target="About" />
+          <img src="" class="tabimage" data-target="Professional" />
         </div>
+
         <script src="scripts/tabs.js"></script>
       </div>
 
-
       <div id="rhs-wrapper" class="wrapper flexbox-item">
-          <div id="logo-wrapper">
-            <img id="logo" alt="-.-" src="assets/-_-.jpg"> <!--We're gonna need this to be an svg if we want a glow effect.-->
-            <script src="scripts/logo-animation.js"></script>
-          </div> 
-          <text></text>           
-        </div>    
+        <div id="logo-wrapper">
+          <img id="logo" alt="-.-" src="assets/-_-.jpg" />
+          <!--We're gonna need this to be an svg if we want a glow effect.-->
+          <script src="scripts/logo-animation.js"></script>
+        </div>
+        <text></text>
       </div>
     </main>
-    <footer class="flexbox-container">
+
+    <footer class="flexbox-container margin">
       <div class="socials">
-        <a 
-          href="https://linktr.ee/adrian_velvil" target="_blank">
-          <img 
-          src="assets/icons/linktree.png" alt="Linktree" loading="lazy" class="socicon"/>
-        </a>
-        <a 
-          href="https://www.linkedin.com/in/adrian-velez-villanueva/" target="_blank">
+        <a href="https://linktr.ee/adrian_velvil" target="_blank">
           <img
-            src="assets/icons/linkedin.png" alt="Linkedin" loading="lazy" class="socicon"
+            src="assets/icons/linktree.png"
+            alt="Linktree"
+            loading="lazy"
+            class="socicon"
           />
         </a>
-        <a 
-        href="https://github.com/avvnova" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/adrian-velez-villanueva/"
+          target="_blank"
+        >
           <img
-            src="assets/icons/github.png" alt="Github" loading="lazy" class="socicon"
+            src="assets/icons/linkedin.png"
+            alt="Linkedin"
+            loading="lazy"
+            class="socicon"
+          />
+        </a>
+        <a href="https://github.com/avvnova" target="_blank">
+          <img
+            src="assets/icons/github.png"
+            alt="Github"
+            loading="lazy"
+            class="socicon"
           />
         </a>
       </div>
+
       <div id="credits">
-      <!-- Footer with credits and copyright -->
         <span class="copy"> | © Copyright 2024 </span>
-        <span class="copy"> Built by
-          <a
-            href="https://github.com/avvnova"
-            target="_blank">
+        <span class="copy">
+          Built by
+          <a href="https://github.com/avvnova" target="_blank">
             Adrian Velez Villanueva (avvnova)
           </a>
         </span>
       </div>
+
       <div id="theme-selector">
         <button onclick="dropdownFn()" class="dropbtn">main</button>
         <div id="themes" class="theme-list">
@@ -131,6 +139,7 @@
         <script src="scripts/theme.js"></script>
       </div>
     </footer>
+
     <script src="scripts/crt-effect.js"></script>
   </body>
 </html>

@@ -1,6 +1,8 @@
 .order {
-  padding: 15% 25%;
   display: grid;
+  box-sizing: border-box;
+  border: solid 10px;
+  margin: 15% 25%;
 }
 /* Style the tab */
 .tab {
