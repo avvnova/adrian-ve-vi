@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
+    
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/theme-selector.css" />
+    <link rel="stylesheet" href="styles/tabs.css" />
+    <link rel="stylesheet" href="styles/webfont.css" />
+
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adrian Velez Villanueva</title>
@@ -15,54 +20,64 @@
     <!-- If showMain is true, render the main site with the selected section-->
 
     <!-- Otherwise, render the landing page-->
+    <div class="crt"></div>
     <main>
-    <div class="crt">
     <div class="flexbox-container" style="display:flex;">
       <div id="lhs-wrapper" class="wrapper flexbox-item">
-          <!-- Navigation bar for switching sections -->
-          <div class="order">
-            <div class="tab">
-              <button class="tablinks" data-origin="London">London</button>
-              <button class="tablinks" data-origin="Paris">Paris</button>
-              <button class="tablinks" data-origin="Tokyo">Tokyo</button>
-            </div>
-
-            <div data-target="London" class="tabcontent">
-              <h3>London</h3>
-              <p>London is the capital city of England.</p>
-            </div>
-
-            <div data-target="Paris" class="tabcontent">
-              <h3>Paris</h3>
-              <p>Paris is the capital of France.</p>
-            </div>
-
-            <div data-target="Tokyo" class="tabcontent">
-              <h3>Tokyo</h3>
-              <p>Tokyo is the capital of Japan.</p>
-            </div>
-            <img
-              src="https://cdn.shopify.com/s/files/1/0044/8718/4457/files/800x600_Wallpaper_Blue_Sky.png?v=1646897329"
-              class="tabimage"
-              data-target="London"
-            />
-            <img
-              src="https://cdn.shopify.com/s/files/1/0044/8718/4457/files/Auckland_Skyline_800x600_80c6b2c0-28bc-4885-8440-a6da7de39c82.jpg?v=1646897329"
-              class="tabimage"
-              data-target="Paris"
-            />
+        <!-- Navigation bar for switching sections -->
+        <div class="order">
+          <div class="tab">
+            <button class="tablinks" data-origin="About">About</button>
+            <button class="tablinks" data-origin="Professional">Professional</button>
+            <button class="tablinks" data-origin="Hobbies">Hobbies</button>
           </div>
-          <script src="scripts/tabs.js"></script>
-          <!-- Sidebar (currently only one item) -->
-          <div id="content-container">
-            <div id="sidebar-container">
+          <div data-target="About" class="tabcontent">
+            <div id="sidebar-container" class="tab-column">
               <ul className="sidebar">
               <li>one</li>
-            </ul>
+              </ul>
             </div>
-            <content></content>
-            <!--where we insert tab content-->
+            <div id="main-container" class="tab-column">
+              <h3>About</h3>
+              <p>London is the capital city of England.</p>
+            </div>
           </div>
+
+          <div data-target="Professional" class="tabcontent">
+            <div id="sidebar-container" class="tab-column">
+              <ul className="sidebar">
+              <li>one</li>
+              </ul>
+            </div>
+            <div id="main-container" class="tab-column">
+              <h3>Professional</h3>
+              <p>Paris is the capital of France.</p>
+            </div>
+          </div>
+
+          <div data-target="Hobbies" class="tabcontent">
+            <div id="sidebar-container" class="tab-column">
+              <ul className="sidebar">
+              <li>one</li>
+              </ul>
+            </div>
+            <div id="main-container" class="tab-column">
+              <h3>Hobbies</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
+          </div>
+          <img
+            src=""
+            class="tabimage"
+            data-target="About"
+          />
+          <img
+            src=""
+            class="tabimage"
+            data-target="Professional"
+          />
+        </div>
+        <script src="scripts/tabs.js"></script>
       </div>
 
 
@@ -74,7 +89,6 @@
           <text></text>           
         </div>    
       </div>
-    </div>
     </main>
     <footer class="flexbox-container" style="display:flex;">
       <div class="socials">
@@ -117,5 +131,6 @@
         <script src="scripts/theme.js"></script>
       </div>
     </footer>
+    <script src="scripts/crt-effect.js"></script>
   </body>
 </html>

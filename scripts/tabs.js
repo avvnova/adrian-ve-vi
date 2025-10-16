@@ -17,7 +17,7 @@ for (let i = 0; i < origins.length; i++) {
       //Only get elements of which the data-target attribute matches the value of the data-origin of the clicked  element
       var targets = document.querySelectorAll("*[data-target='"+e.target.dataset.origin+"']");   
       for (i = 0; i < targets.length; i++) {
-          targets[i].style.display = "block";      
+          targets[i].style.display = "grid";      
       }
       
       e.target.classList.add("active");

@@ -21,6 +21,14 @@
   --dark-charcoal: #333333;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height:100vh;
+    width:100vw;
+}
+
 @font-face{
   font-family: 'Futura-Condensed';
   src: url('/assets/Fonts/Futura Condensed Light.ttf') format('truetype');
@@ -88,6 +96,8 @@ footer{
   z-index: 2;
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
+  width: 100vw;
+  height: 100vh;
 }
 
 .flexbox-container{
@@ -95,13 +105,13 @@ footer{
   flex-direction: row;
   align-items: stretch;
   justify-content: flex-start;
-  width: 100%;
+  width: 100vw;
 }
 
 .flexbox-item{ min-width: 0; }
 
-#lhs-wrapper{ flex: 1 1 33.333%; }
-#rhs-wrapper{ flex: 2 1 66.667%; }
+#lhs-wrapper{ flex: 1 1 50%; }
+#rhs-wrapper{ flex: 2 1 50%; }
 
 /* IDs */
 #logo-wrapper{ 
