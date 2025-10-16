@@ -4,10 +4,10 @@ window.onload = function() {
 
   setInterval(() => {
     if (pos === 0) {
-      logo.style.transform = "rotate(0.10turn)";
+      logo.style.transform = "rotate(0.05turn)";
       pos = 1;
     } else {
-      logo.style.transform = "rotate(-0.10turn)";
+      logo.style.transform = "rotate(-0.05turn)";
       pos = 0;
     }
   }, 1000);
@@ -17,4 +17,4 @@ const logo = document.getElementById("logo");
 
 setInterval(() => {
   logo.classList.toggle("glowing");
-}, 1000);
+}, 2500);
