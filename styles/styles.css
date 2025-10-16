@@ -76,13 +76,6 @@ body{
   background-image: url();
 }
 
-footer{
-  display: inline;
-  position:fixed;
-  bottom: 0%;
-  height: 5% vh;
-}
-
 /*Sets CRT effect on window*/
 .crt::before {
   content: " ";
@@ -101,11 +94,17 @@ footer{
 }
 
 .flexbox-container{
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   align-items: stretch;
-  justify-content: flex-start;
   width: 100vw;
+}
+
+footer{
+  position:fixed;
+  justify-content: space-between;
+  bottom: 0%;
+  height: 5% vh;
 }
 
 .flexbox-item{ min-width: 0; }
@@ -116,8 +115,8 @@ footer{
 /* IDs */
 #logo-wrapper{ 
   position: relative;
-  left: 25%;
-  top: 25%;
+  margin-top: 15%;
+  padding: 15% 25%;
 }
 #logo{
   position: absolute;

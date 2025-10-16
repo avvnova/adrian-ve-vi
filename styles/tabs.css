@@ -1,8 +1,6 @@
 .order {
-  padding: 50px;
+  padding: 15% 25%;
   display: grid;
-  /* grid-template-columns: 1fr 1fr;*/
-    
 }
 /* Style the tab */
 .tab {
