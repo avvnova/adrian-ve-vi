@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-selected-theme="winter-rose">
+<html lang="en" data-selected-theme="blossom-orange">
   <head>
     <meta charset="UTF-8" />
 
@@ -25,20 +25,34 @@
     <div class="crt"></div>
 
     <main class="flexbox-container">
+      <div class="order">
       <div id="lhs-wrapper" class="wrapper flexbox-item">
-        <div class="order">
+          
           <div class="tab">
-            <button class="tablinks" data-origin="About">About</button>
-            <button class="tablinks" data-origin="Professional">
-              Professional
-            </button>
-            <button class="tablinks" data-origin="Hobbies">Hobbies</button>
+            <button class="tablinks" data-origin="home">home</button>
+            <button class="tablinks" data-origin="about">about</button>
+            <button class="tablinks" data-origin="professional">professional</button>
+            <button class="tablinks" data-origin="hobbies">hobbies</button>
+            <button class="tablinks" data-origin="projects">projects</button>
+            <button class="tablinks" data-origin="blog">blog</button>
+          </div>
+          <div data-target="home" class="tabcontent">
+            <div id="sidebar-container" class="tab-column">
+              <ul class="sidebar">
+                <li></li>
+              </ul>
+            </div>
+            <div id="main-container" class="tab-column">
+              <h3></h3>
+              <p>London is the capital city of England.</p>
+            </div>
           </div>
 
-          <div data-target="About" class="tabcontent">
+          <div data-target="about" class="tabcontent">
             <div id="sidebar-container" class="tab-column">
-              <ul className="sidebar">
-                <li>one</li>
+              <ul class="sidebar">
+                <li></li>
+                <li>Contact</li>
               </ul>
             </div>
             <div id="main-container" class="tab-column">
@@ -47,9 +61,9 @@
             </div>
           </div>
 
-          <div data-target="Professional" class="tabcontent">
+          <div data-target="professional" class="tabcontent">
             <div id="sidebar-container" class="tab-column">
-              <ul className="sidebar">
+              <ul class="sidebar">
                 <li>one</li>
               </ul>
             </div>
@@ -59,9 +73,9 @@
             </div>
           </div>
 
-          <div data-target="Hobbies" class="tabcontent">
+          <div data-target="hobbies" class="tabcontent">
             <div id="sidebar-container" class="tab-column">
-              <ul className="sidebar">
+              <ul class="sidebar">
                 <li>one</li>
               </ul>
             </div>
@@ -71,8 +85,32 @@
             </div>
           </div>
 
-          <img src="" class="tabimage" data-target="About" />
-          <img src="" class="tabimage" data-target="Professional" />
+          <div data-target="projects" class="tabcontent">
+            <div id="sidebar-container" class="tab-column">
+              <ul class="sidebar">
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div id="main-container" class="tab-column">
+              <h3>About</h3>
+              <p>London is the capital city of England.</p>
+            </div>
+          </div>
+
+          <div data-target="blog" class="tabcontent">
+            <div id="sidebar-container" class="tab-column">
+              <ul class="sidebar">
+                <li></li>
+              </ul>
+            </div>
+            <div id="main-container" class="tab-column">
+              <h3>blog</h3>
+              <p>no i don't care how many other swe's have blogs on their websites. i'm not making one. you can't make me. go check this out instead i don't care.</p>
+            </div>
+          </div>
+
+          <img src="" class="tabimage" data-target="about" />
+          <img src="" class="tabimage" data-target="professional" />
         </div>
 
         <script src="scripts/tabs.js"></script>
@@ -120,11 +158,10 @@
       </div>
 
       <div id="credits">
-        <span class="copy"> | © Copyright 2024 </span>
+        <span class="copy">© Copyright 2025</span>
         <span class="copy">
-          Built by
           <a href="https://github.com/avvnova" target="_blank">
-            Adrian Velez Villanueva (avvnova)
+            Adrian Velez Villanueva
           </a>
         </span>
       </div>

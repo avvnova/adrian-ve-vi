@@ -30,7 +30,7 @@
   --color-primary-0: #034C3C;
   --color-primary-1: #236C5C;
   --color-accent: #bf4f51;
-  --background-gif: url('/assets/Gifs/winter-rose.gif');
+  --background-gif: url('/assets/gifs/winter-rose.gif');
 }
 
 [data-selected-theme="blossom-orange"] {
@@ -40,7 +40,7 @@
   --color-primary-0: #160f29ff;
   --color-primary-1: #000011ff;
   --color-accent: #fdef83ff;
-  --background-gif: url('/assets/Gifs/blossom-orange.gif');
+  --background-gif: url('/assets/gifs/blossom-orange.gif');
 } 
 
 [data-selected-theme="nightwing-blue"] { 
@@ -50,7 +50,7 @@
   --color-primary-0:#6699CC;
   --color-primary-1:#99CCFF;
   --color-accent:#3366CC;
-  --background-gif: url('/assets/Gifs/nightwing-blue.gif');
+  --background-gif: url('/assets/gifs/nightwing-blue.gif');
 }
 
 
@@ -62,41 +62,50 @@ html, body {
     width:100vw;
 }
 
+body{ background-image: var(--background-gif); }
+
+a{color: var(--color-accent);}
+p{}
+h1{}
+
+header{ top: 0%; }
+footer{ bottom: 0%; }
+
 @font-face{
   font-family: 'Futura-Condensed';
-  src: url('/assets/Fonts/Futura Condensed Light.ttf') format('truetype');
+  src: url('/assets/fonts/Futura Condensed Light.ttf') format('truetype');
 }
 @font-face{
   font-family: 'Futura-Condensed';
-  src: url('/assets/Fonts/Futura Condensed Bold.ttf') format('truetype');
+  src: url('/assets/fonts/Futura Condensed Bold.ttf') format('truetype');
 }
 @font-face{
   font-family: 'Futura-Condensed';
-  src: url('/assets/Fonts/Futura Condensed Medium.ttf') format('truetype');
+  src: url('/assets/fonts/Futura Condensed Medium.ttf') format('truetype');
 }
 @font-face{
   font-family: 'Balgruf';
-  src: url('/assets/Fonts/Balgruf Italic.ttf') format('truetype');
+  src: url('/assets/fonts/Balgruf Italic.ttf') format('truetype');
 }
 @font-face{
   font-family: 'Balgruf';
-  src: url('/assets/Fonts/Balgruf Medium.ttf') format('truetype');
+  src: url('/assets/fonts/Balgruf Medium.ttf') format('truetype');
 }
 @font-face{
   font-family: 'Typo3';
-  src: url('/assets/Fonts/Typo3 Light.ttf') format('truetype');
+  src: url('/assets/fonts/Typo3 Light.ttf') format('truetype');
 }
 @font-face{
   font-family: 'Typo3';
-  src: url('/assets/Fonts/Typo3 Medium.ttf') format('truetype');
+  src: url('/assets/fonts/Typo3 Medium.ttf') format('truetype');
 }
 @font-face{
   font-family: 'NerdFont';
-  src: url('/assets/Fonts/SymbolsNerdFont-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/SymbolsNerdFont-Regular.ttf') format('truetype');
 }
 @font-face{
   font-family: 'NerdFont';
-  src: url('/assets/Fonts/SymbolsNerdFontMono-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/SymbolsNerdFontMono-Regular.ttf') format('truetype');
 }
 .crt {
  position: fixed;
@@ -156,9 +165,3 @@ html, body {
 #logo.glowing { box-shadow: 0 0 10px var(--color-accent), 0 0 20px var(--color-accent), 0 0 30px var(--color-accent); }
 #credits{ display: inline; }
 
-a{color: var(--color-accent);}
-p{}
-h1{}
-body{ background-image: url(); }
-header{ top: 0%; }
-footer{ bottom: 0%; }

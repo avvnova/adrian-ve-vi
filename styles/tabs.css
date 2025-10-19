@@ -3,17 +3,18 @@
   box-sizing: border-box;
   border: solid 10px;
   margin: 15% 25%;
+  max-width: 30vw;
 }
 /* Style the tab */
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: var(--color-background-0);
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: inherit;
+  background-color: var(--color-background-0);
   float: left;
   border: none;
   outline: none;
