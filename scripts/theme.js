@@ -1,7 +1,7 @@
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function dropdownFn() {
-  document.getElementById("theme-selector").classList.toggle("show");
+  document.getElementById("themes").classList.toggle("show");
 }
 
 // Close the dropdown menu if the user clicks outside of it
@@ -19,5 +19,4 @@ window.onclick = function(event) {
 }
 
 function switchTheme(theme) {
-// Will
 }
