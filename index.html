@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/theme-selector.css" />
     <link rel="stylesheet" href="styles/tabs.css" />
     <link rel="stylesheet" href="styles/webfont.css" />
+    <link rel="stylesheet" href="styles/switch.css" />
 
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,97 +21,103 @@
     <!-- If showMain is true, render the main site with the selected section-->
 
     <!-- Otherwise, render the landing page-->
-    <header class="flexbox-container margin">Adrian Velez Villanueva</header>
+    <header class="flexbox-container margin">
+      <div class="flexbox-item">Adrian Velez Villanueva</div>
+      <div class="flexbox-item">
+      <label class="switch">
+        <input type="checkbox" id="bg-toggle" onchange="freezeBackground()" checked/>
+        <span class="slider"></span>
+      </label>
+      </div>
+      <script src="scripts/background-toggle.js"></script>
+    </header>
 
     <div class="crt"></div>
 
     <main class="flexbox-container">
-      <div class="order">
+      
       <div id="lhs-wrapper" class="wrapper flexbox-item">
-          
+      <div class="order">    
           <div class="tab">
             <button class="tablinks" data-origin="home">home</button>
             <button class="tablinks" data-origin="about">about</button>
-            <button class="tablinks" data-origin="professional">professional</button>
+            <button class="tablinks" data-origin="career">career</button>
             <button class="tablinks" data-origin="hobbies">hobbies</button>
             <button class="tablinks" data-origin="projects">projects</button>
             <button class="tablinks" data-origin="blog">blog</button>
           </div>
-          <div data-target="home" class="tabcontent">
-            <div id="sidebar-container" class="tab-column">
-              <ul class="sidebar">
-                <li></li>
-              </ul>
+          <div data-target="home" class="tab-content" style="display: grid;">
+            <div class="sidebar tab-column">
+              <h3>home</h3>
+              <img` src="" class="tabimage" alt="home icon" />
             </div>
-            <div id="main-container" class="tab-column">
-              <h3></h3>
-              <p>London is the capital city of England.</p>
+            <div class="mainbar tab-column">
+              <p>software and devops engineer, passable employee, ex-artist, general okay person. what more can you ask for? the first draft of this website respectfully sucked so I decided to just wing it. If the background is too active for your eyes, feel free to toggle it on the top right.</p>
             </div>
           </div>
 
-          <div data-target="about" class="tabcontent">
-            <div id="sidebar-container" class="tab-column">
-              <ul class="sidebar">
-                <li></li>
+          <div data-target="about" class="tab-content">
+            <div class="sidebar tab-column">
+              <h3>about</h3>
+              <ul class="sidebar-list">
                 <li>Contact</li>
               </ul>
             </div>
-            <div id="main-container" class="tab-column">
-              <h3>About</h3>
+            <div class="mainbar tab-column">
               <p>London is the capital city of England.</p>
             </div>
           </div>
 
-          <div data-target="professional" class="tabcontent">
-            <div id="sidebar-container" class="tab-column">
-              <ul class="sidebar">
+          <div data-target="career" class="tab-content">
+            <div class="sidebar tab-column">
+              <h3>career</h3>
+              <ul class="sidebar-list">
                 <li>one</li>
               </ul>
             </div>
-            <div id="main-container" class="tab-column">
-              <h3>Professional</h3>
+            <div class="mainbar tab-column">
               <p>Paris is the capital of France.</p>
             </div>
           </div>
 
-          <div data-target="hobbies" class="tabcontent">
-            <div id="sidebar-container" class="tab-column">
-              <ul class="sidebar">
+          <div data-target="hobbies" class="tab-content">
+            <div class="sidebar tab-column">
+              <h3>hobbies</h3>
+              <ul class="sidebar-list">
                 <li>one</li>
               </ul>
             </div>
-            <div id="main-container" class="tab-column">
-              <h3>Hobbies</h3>
+            <div class="mainbar tab-column">
               <p>Tokyo is the capital of Japan.</p>
             </div>
           </div>
 
-          <div data-target="projects" class="tabcontent">
-            <div id="sidebar-container" class="tab-column">
-              <ul class="sidebar">
+          <div data-target="projects" class="tab-content">
+            <div class="sidebar tab-column">
+              <h3>projects</h3>
+              <ul class="sidebar-list">
                 <li>Contact</li>
               </ul>
             </div>
-            <div id="main-container" class="tab-column">
-              <h3>About</h3>
+            <div class="mainbar tab-column">
               <p>London is the capital city of England. dbnaojhkwlbVFIJHSEBfkhjzgbgfjhuzsgbaviuyczgvbfiyutgAKUYFkvJKHGWASGFDVBUIKYHJGEHFWbkuyYSEGfiytSFVyuti </p>
             </div>
           </div>
 
-          <div data-target="blog" class="tabcontent">
-            <div id="sidebar-container" class="tab-column">
-              <ul class="sidebar">
-                <li></li>
+          <div data-target="blog" class="tab-content">
+            <div class="sidebar tab-column">
+              <h3>blog</h3>
+              <ul class="sidebar-list">
+                <li>Contact</li>
               </ul>
             </div>
-            <div id="main-container" class="tab-column">
-              <h3>blog</h3>
+            <div class="mainbar tab-column">
               <p>no i don't care how many other swe's have blogs on their websites. i'm not making one. you can't make me. go check this out instead i don't care.</p>
             </div>
           </div>
 
           <img src="" class="tabimage" data-target="about" />
-          <img src="" class="tabimage" data-target="professional" />
+          <img src="" class="tabimage" data-target="career" />
         </div>
 
         <script src="scripts/tabs.js"></script>
@@ -127,7 +134,7 @@
     </main>
 
     <footer class="flexbox-container margin">
-      <div class="socials">
+      <div id="socials" class="flexbox-item">
         <a href="https://linktr.ee/adrian_velvil" target="_blank">
           <img
             src="assets/icons/linktree.png"
@@ -157,7 +164,7 @@
         </a>
       </div>
 
-      <div id="credits">
+      <div id="credits" class="flexbox-item">
         <span class="copy">© Copyright 2025</span>
         <span class="copy">
           <a href="https://github.com/avvnova" target="_blank">
@@ -166,7 +173,7 @@
         </span>
       </div>
 
-      <div id="theme-selector">
+      <div id="theme-selector" class="flexbox-item dropdown">
         <button onclick="dropdownFn()" class="dropbtn">main</button>
         <div id="themes" class="theme-list">
           <a href="#">winter-rose</a>

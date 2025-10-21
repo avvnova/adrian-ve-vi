@@ -35,9 +35,9 @@
 }
 
 /* Style the tab content */
-.tabcontent {
+.tab-content {
   display: none;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
@@ -48,4 +48,34 @@
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+}
+
+.sidebar{
+  width: 150px;
+  min-width: 150px;
+}
+
+.sidebar-list{
+  list-style-type: var(--bullet-style);
+  margin-top: 5%;
+  padding-left: 20px;
+}
+
+.sidebar-list li{
+  padding-left: 10px;
+}
+
+.sidebar h3{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.mainbar p{
+  padding-top: 5%;
+}
+
+.tab-column{
+  text-align: left;
+  overflow: visible;
+  text-overflow: clip;
 }

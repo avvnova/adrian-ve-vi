@@ -31,6 +31,8 @@
   --color-primary-1: #236C5C;
   --color-accent: #bf4f51;
   --background-gif: url('/assets/gifs/winter-rose.gif');
+  --bullet-style: "\2600";
+  --toggle-emoji: "\127801"
 }
 
 [data-selected-theme="blossom-orange"] {
@@ -41,6 +43,10 @@
   --color-primary-1: #000011ff;
   --color-accent: #fdef83ff;
   --background-gif: url('/assets/gifs/blossom-orange.gif');
+  --background-jpg: url('/assets/images/blossom-orange.jpg');
+  --bullet-style: "\2600";
+  --toggle-emoji: "\1F34A"
+  
 } 
 
 [data-selected-theme="nightwing-blue"] { 
@@ -62,15 +68,28 @@ html, body {
     width:100vw;
 }
 
-body{ background-image: var(--background-gif); }
+body{
+    background-image: var(--background-gif);
+}
 
 a{color: var(--color-accent);}
-p{}
+p{
+    word-break: break-all;
+    white-space: normal;
+}
 h1{}
-
+h2{}
+h3{
+  font-family: '04B_30';
+  font-size: 1.5em;
+}
 header{ top: 0%; }
 footer{ bottom: 0%; }
 
+@font-face{
+  font-family: '04B_30';
+  src: url('/assets/fonts/04B_30.ttf') format('truetype');
+}
 @font-face{
   font-family: 'Futura-Condensed';
   src: url('/assets/fonts/Futura Condensed Light.ttf') format('truetype');
@@ -144,7 +163,6 @@ footer{ bottom: 0%; }
   height: 2.5vh;
   z-index: 3
 }
-
 .flexbox-item{ min-width: 0; }
 
 #lhs-wrapper{ flex: 1 1 50%; }
