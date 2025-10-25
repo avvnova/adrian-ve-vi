@@ -23,24 +23,24 @@
 }*/
 
 :root, 
-[data-selected-theme="winter-rose"] { 
-  --color-background-0: #f5f5f5;
-  --color-background-1: #d5d5d5;
+[data-selected-theme="dark-forest"] { 
+  --color-primary: #f5f5f5;
+  --color-primary-dark: #d5d5d5;
   /* Primary needs to contrast with background */
-  --color-primary-0: #034C3C;
-  --color-primary-1: #236C5C;
+  --color-secondary: #034C3C;
+  --color-secondary-dark: #236C5C;
   --color-accent: #bf4f51;
-  --background-gif: url('/assets/gifs/winter-rose.gif');
+  --background-gif: url('/assets/gifs/dark-forest.gif');
   --bullet-style: "\2600";
   --toggle-emoji: "\127801"
 }
 
 [data-selected-theme="blossom-orange"] {
-  --color-background-0: #ff950aff;
-  --color-background-1: #b86800ff;
+  --color-primary: #ff950aff;
+  --color-primary-dark: #b86800ff;
   /* Primary needs to contrast with background */
-  --color-primary-0: #160f29ff;
-  --color-primary-1: #000011ff;
+  --color-secondary: #160f29ff;
+  --color-secondary-dark: #000011ff;
   --color-accent: #fdef83ff;
   --background-gif: url('/assets/gifs/blossom-orange.gif');
   --background-jpg: url('/assets/images/blossom-orange.jpg');
@@ -50,15 +50,24 @@
 } 
 
 [data-selected-theme="nightwing-blue"] { 
-  --color-background-0:#000033;
-  --color-background-1:#333333;
+  --color-primary:#000033;
+  --color-primary-dark:#333333;
   /* Primary needs to contrast with background */
-  --color-primary-0:#6699CC;
-  --color-primary-1:#99CCFF;
+  --color-secondary:#6699CC;
+  --color-secondary-dark:#99CCFF;
   --color-accent:#3366CC;
   --background-gif: url('/assets/gifs/nightwing-blue.gif');
 }
 
+[data-selected-theme="gemstone"] { 
+  --color-primary:#ffdeef;
+  --color-primary-dark:#a9376c;
+  /* Primary needs to contrast with background */
+  --color-secondary:#9cffff;
+  --color-secondary-dark:#52a5a5;
+  --color-accent:#f7ffff;
+  --background-gif: url('/assets/gifs/gemstone.gif');
+}
 
 html, body {
     margin: 0;
@@ -70,6 +79,7 @@ html, body {
 
 body{
     background-image: var(--background-gif);
+    background-size: contain;
 }
 
 a{color: var(--color-accent);}
@@ -156,11 +166,11 @@ footer{ bottom: 0%; }
   width: 100vw;
 }
 .margin{
-  color: var(--color-background-0);
-  background-color: var(--color-primary-0);
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
   position: fixed;
   justify-content: space-between;
-  height: 2.5vh;
+  height: 3vh;
   z-index: 3
 }
 .flexbox-item{ min-width: 0; }
