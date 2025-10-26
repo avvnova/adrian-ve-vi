@@ -87,11 +87,15 @@ p{
     word-break: break-all;
     white-space: normal;
 }
-h1{}
+h1{
+  font-family: '04B_30';
+  font-size: 2em;
+}
 h2{}
 h3{
   font-family: '04B_30';
-  font-size: 1.5em;
+  font-size: 3vh;
+  margin:0px;  
 }
 header{ top: 0%; }
 footer{ bottom: 0%; }
