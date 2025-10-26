@@ -32,8 +32,8 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 2.9vh;
-  width: 1.20vw;
+  height: 2.8vh;
+  width: 1.18vw;
   left: 0;
   bottom: 0;
   background-color: var(--color-accent);
@@ -46,11 +46,31 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px var(--color-primary-dark);
+  box-shadow: 0 0 5px var(--color-primary-dark);
 }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(1.8vw);
-  -ms-transform: translateX(11.8vw);
+  -ms-transform: translateX(1.8vw);
   transform: translateX(1.8vw);
+}
+
+/* Mobile responsive styles for switch */
+@media screen and (max-width: 768px) {
+  .switch {
+    width: 36px;
+    height: 20px;
+    border-width: 1px;
+  }
+  
+  .slider:before {
+    height: 20px;
+    width: 18px;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+  }
 }

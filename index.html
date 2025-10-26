@@ -22,8 +22,8 @@
 
     <!-- Otherwise, render the landing page-->
     <header class="flexbox-container margin">
-      <div class="flexbox-item"><h3>I Am A Very Good SWE I Promise</h3></div>
-      <div class="flexbox-item">
+      <div class="flexbox-item" style="padding:0;"><h3>I Am A Very Good SWE I Promise</h3></div>
+      <div class="flexbox-item" style="padding:0;">
       <label class="switch">
         <input type="checkbox" id="bg-toggle" onchange="freezeBackground()" checked/>
         <span class="slider"></span>
@@ -173,12 +173,13 @@
         </span>
       </div>
 
-      <div id="theme-selector" class="flexbox-item dropdown">
+      <div id="theme-selector" class="flexbox-item">
         <button onclick="dropdownFn()" class="dropbtn">main</button>
-        <div id="themes" class="theme-list">
-          <a href="#">dark-forest</a>
-          <a href="#">blossom-orange</a>
-          <a href="#">nightwing-blue</a>
+        <div id="themes" class="theme-dropdown">
+          <button data-theme="blossom-orange" aria-pressed="true">blossom-orange</button>
+          <button data-theme="dark-forest" aria-pressed="false">dark-forest</button>
+          <button data-theme="nightwing-blue" aria-pressed="false">nightwing-blue</button>
+          <button data-theme="gemstone" aria-pressed="false">gemstone</button>
         </div>
         <script src="scripts/theme.js"></script>
       </div>
