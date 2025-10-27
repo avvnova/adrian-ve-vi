@@ -24,19 +24,21 @@
 
 :root, 
 [data-selected-theme="dark-forest"] { 
+  --font-color: white;
   --color-primary: #f5f5f5;
   --color-primary-dark: #d5d5d5;
   /* Primary needs to contrast with background */
-  --color-secondary: #034C3C;
-  --color-secondary-dark: #236C5C;
+  --color-secondary: #236C5C;
+  --color-secondary-dark: #034C3C;
   --color-accent: #bf4f51;
   --background-gif: url('/assets/gifs/dark-forest.gif');
   --background-jpg: url('/assets/images/dark-forest.jpg');
-  --bullet-style: "\2600";
+  --bullet-style: "\1F940";
   --toggle-emoji: "\127801"
 }
 
 [data-selected-theme="blossom-orange"] {
+  --font-color: black;
   --color-primary: #ff950aff;
   --color-primary-dark: #b86800ff;
   /* Primary needs to contrast with background */
@@ -45,12 +47,13 @@
   --color-accent: #fdef83ff;
   --background-gif: url('/assets/gifs/blossom-orange.gif');
   --background-jpg: url('/assets/images/blossom-orange.jpg');
-  --bullet-style: "\2600";
+  --bullet-style: "\1F359";
   --toggle-emoji: "\1F34A"
   
 } 
 
 [data-selected-theme="nightwing-blue"] { 
+  --font-color: white;
   --color-primary:#000033;
   --color-primary-dark:#333333;
   /* Primary needs to contrast with background */
@@ -59,9 +62,11 @@
   --color-accent:#3366CC;
   --background-gif: url('/assets/gifs/nightwing-blue.gif');
   --background-jpg: url('/assets/images/nightwing-blue.jpg');
+  --bullet-style: "\1F30";
 }
 
 [data-selected-theme="gemstone"] { 
+  --font-color: black;
   --color-primary:#ffdeef;
   --color-primary-dark:#a9376c;
   /* Primary needs to contrast with background */
@@ -70,6 +75,7 @@
   --color-accent:#f7ffff;
   --background-gif: url('/assets/gifs/gemstone.gif');
   --background-jpg: url('/assets/images/gemstone.jpg');
+  --bullet-style: "\1F48E"
 }
 
 html, body {
@@ -145,8 +151,8 @@ footer{ bottom: 0%; }
   padding: 10px;
   display: block;}
 
-#lhs-wrapper{ flex: 1 1 50%; }
-#rhs-wrapper{ flex: 2 1 50%; }
+#lhs-wrapper{ flex: 1 1 60%; }
+#rhs-wrapper{ flex: 2 1 40%; }
 
 /* IDs */
 #logo-wrapper{ 
@@ -215,9 +221,7 @@ footer{ bottom: 0%; }
     padding: 5px 0;
   }
 
-  .flexbox-item {
-    padding: 5px;
-  }
+
 }
 
 @font-face{
@@ -259,4 +263,8 @@ footer{ bottom: 0%; }
 @font-face{
   font-family: 'NerdFont';
   src: url('/assets/fonts/SymbolsNerdFontMono-Regular.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'BitcountGrid';
+  src: url('/assets/fonts/BitcountGridSingle.ttf') format('truetype');
 }

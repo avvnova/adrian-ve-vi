@@ -1,6 +1,11 @@
+/*top-level component*/
+#theme-selector{
+  padding: 0px;
+}
+
 /* Dropdown Button */
 .dropbtn {
-  margin: 8px 0px 8px 0px;
+  margin: 0px 0px 8px 0px;
   background-color: var(--color-secondary-dark);
   color: white;
   padding: 8px;
@@ -36,7 +41,7 @@
 /* Links inside the dropdown */
 .theme-dropdown button {
   color: black;
-  padding: 12px 16px;
+  padding: 4px 8px;
   text-decoration: none;
   display: block;
 }

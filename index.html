@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles/tabs.css" />
     <link rel="stylesheet" href="styles/webfont.css" />
     <link rel="stylesheet" href="styles/switch.css" />
-
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adrian Velez Villanueva</title>
@@ -39,12 +38,12 @@
       <div id="lhs-wrapper" class="wrapper flexbox-item">
       <div class="order">    
           <div class="tab">
-            <button class="tablinks" data-origin="home">home</button>
-            <button class="tablinks" data-origin="about">about</button>
-            <button class="tablinks" data-origin="career">career</button>
-            <button class="tablinks" data-origin="hobbies">hobbies</button>
-            <button class="tablinks" data-origin="projects">projects</button>
-            <button class="tablinks" data-origin="blog">blog</button>
+            <button class="tablinks" data-origin="home">home <p style="font-family:NerdFont;"class="nf-md-home"></i></button>
+            <button class="tablinks" data-origin="about">about <p style="font-family:NerdFont;"class="nf-md-account"></i></button>
+            <button class="tablinks" data-origin="career">career <p style="font-family:NerdFont;"class="nf-md-briefcase"></i></button>
+            <button class="tablinks" data-origin="hobbies">hobbies <p style="font-family:NerdFont;"class="nf-md-tag_heart"></i></button>
+            <button class="tablinks" data-origin="projects">projects <p style="font-family:NerdFont;"class="nf-md-wrench"></i></button>
+            <button class="tablinks" data-origin="blog">blog <p style="font-family:NerdFont;"class="nf-md-pencil"></i></button>
           </div>
           <div data-target="home" class="tab-content" style="display: grid;">
             <div class="sidebar tab-column">
@@ -107,13 +106,32 @@
           <div data-target="blog" class="tab-content">
             <div class="sidebar tab-column">
               <h3>blog</h3>
-              <ul class="sidebar-list">
-                <li>Contact</li>
-              </ul>
+              <p> as currently not a writer who is not interested in beginning anytime soon, I think it is cruel and unusual punishment to be forced into making an obligatory SWE blog. <br> As such, I'm abstaining from this barbaric practice of our past generations. <br> As an alternative, here's a list of <b>other</b> blogs, much better than one I could make.</p>
+
             </div>
             <div class="mainbar tab-column">
-              <p>no i don't care how many other swe's have blogs on their websites. i'm not making one. you can't make me. go check this out instead i don't care.</p>
-            </div>
+              <ul class="sidebar-list">
+                <li><a>https://www.lesswrong.com/</a></li>
+                <br>
+                <li><a>https://timothymiller.dev/</a></li>
+                <br>
+                <li><a>https://sethrobertson.github.io/</a></li>
+                <br>
+                <li><a>https://mileshouse.neocities.org/</a></li>
+                <br>
+                <li><a>https://www.malnushi.com/</a></li>
+                <br>
+                <li><a>https://timothymiller.dev/</a></li>
+                <br>
+                <li><a>https://blog.ncase.me/</a></li>
+                <br>
+                <li><a>https://doqmeat.com/notebook/</a></li>
+                <br>
+                <li><a>https://docs.mrchromebox.tech/</a></li>
+                <br>
+                <li><a>https://www.wheresyoured.at/author/edward/</a></li>
+              </ul>
+                          </div>
           </div>
 
           <img src="" class="tabimage" data-target="about" />
@@ -174,7 +192,7 @@
       </div>
 
       <div id="theme-selector" class="flexbox-item">
-        <button onclick="dropdownFn()" class="dropbtn">main</button>
+        <button onclick="dropdownFn()" class="dropbtn"><i style="font-family:NerdFont;"class="nf-dev-git_branch"></i> main</i></button>
         <div id="themes" class="theme-dropdown">
           <button data-theme="blossom-orange" aria-pressed="true">blossom-orange</button>
           <button data-theme="dark-forest" aria-pressed="false">dark-forest</button>
