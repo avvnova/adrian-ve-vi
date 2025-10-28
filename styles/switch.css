@@ -6,6 +6,7 @@
   display: inline-block;
   width: 2.8vw;
   height: 2.7vh;
+  right: 0.1vw;
   border:1px outset var(--color-primary-dark);
 }
 
@@ -51,9 +52,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(1.8vw);
-  -ms-transform: translateX(1.8vw);
-  transform: translateX(1.8vw);
+  -webkit-transform: translateX(1.6vw);
+  -ms-transform: translateX(1.6vw);
+  transform: translateX(1.6vw);
 }
 
 /* Mobile responsive styles for switch */

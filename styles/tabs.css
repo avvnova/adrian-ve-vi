@@ -44,6 +44,7 @@
 .icon-container span {
   font-family: 'NerdFont';
   pointer-events: none;
+  font-size: 0.75em;
 }
 
 /* Change background color of buttons on hover */

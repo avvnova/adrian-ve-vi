@@ -92,11 +92,16 @@ body{
     background-position: center;
 }
 
-a{color: var(--color-accent);}
-p{
-    word-break: break-all;
-    white-space: normal;
+p, a, span{
+  font-family: 'PixelifySans';
+  font-size: 1.5em;
 }
+
+a{
+  color: var(--color-accent);
+  text-shadow: #000033;
+}
+
 h1{
   font-family: '04B_30';
   font-size: 2em;
@@ -224,10 +229,19 @@ footer{ bottom: 0%; }
 
 
 }
-
+/* Header Fonts */
 @font-face{
   font-family: '04B_30';
   src: url('/assets/fonts/04B_30.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'BitcountGrid';
+  src: url('/assets/fonts/BitcountGridSingle.ttf') format('truetype');
+}
+/* Body Fonts */
+@font-face{
+  font-family: 'PixelifySans';
+  src: url('/assets/fonts/PixelifySans.ttf') format('truetype');
 }
 @font-face{
   font-family: 'Futura-Condensed';
@@ -241,22 +255,7 @@ footer{ bottom: 0%; }
   font-family: 'Futura-Condensed';
   src: url('/assets/fonts/Futura Condensed Medium.ttf') format('truetype');
 }
-@font-face{
-  font-family: 'Balgruf';
-  src: url('/assets/fonts/Balgruf Italic.ttf') format('truetype');
-}
-@font-face{
-  font-family: 'Balgruf';
-  src: url('/assets/fonts/Balgruf Medium.ttf') format('truetype');
-}
-@font-face{
-  font-family: 'Typo3';
-  src: url('/assets/fonts/Typo3 Light.ttf') format('truetype');
-}
-@font-face{
-  font-family: 'Typo3';
-  src: url('/assets/fonts/Typo3 Medium.ttf') format('truetype');
-}
+/* Not used in regular text. Used solely for NerdFont icon classes in text.*/
 @font-face{
   font-family: 'NerdFont';
   src: url('/assets/fonts/SymbolsNerdFont-Regular.ttf') format('truetype');
@@ -264,8 +263,4 @@ footer{ bottom: 0%; }
 @font-face{
   font-family: 'NerdFont';
   src: url('/assets/fonts/SymbolsNerdFontMono-Regular.ttf') format('truetype');
-}
-@font-face{
-  font-family: 'BitcountGrid';
-  src: url('/assets/fonts/BitcountGridSingle.ttf') format('truetype');
 }
