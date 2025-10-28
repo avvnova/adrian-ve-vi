@@ -70,9 +70,9 @@
   --color-primary:#ffdeef;
   --color-primary-dark:#a9376c;
   /* Primary needs to contrast with background */
-  --color-secondary:#9cffff;
-  --color-secondary-dark:#52a5a5;
-  --color-accent:#f7ffff;
+  --color-secondary:#26939f;
+  --color-secondary-dark:#0d2e56;
+  --color-accent:#d6ffff;
   --background-gif: url('/assets/gifs/gemstone.gif');
   --background-jpg: url('/assets/images/gemstone.jpg');
   --bullet-style: "\1F48E"
