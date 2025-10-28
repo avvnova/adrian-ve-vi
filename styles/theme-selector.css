@@ -5,11 +5,12 @@
 
 /* Dropdown Button */
 .dropbtn {
-  margin: 0px 0px 8px 0px;
   background-color: var(--color-secondary-dark);
   color: white;
   padding: 8px;
-  font-size: 12px;
+  font-size: 1em;
+  height:3vh;
+  min-width: 60px;
   border: none;
   cursor: pointer;
   transition: 0.3s;
@@ -19,6 +20,7 @@
 .dropbtn:hover, .dropbtn:focus {
   background-color: var(--color-accent);
   color: var(--color-secondary-dark);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 /* The container <div> - needed to position the theme-dropdown content */
@@ -27,12 +29,16 @@
   display: inline-block;
 }
 
+#theme-icon{
+  font-family: 'NerdFont';
+  pointer-events: none;
+  margin-right: 0.25em;
+}
+
 /* Dropdown Content (Hidden by Default) */
 .theme-dropdown {
   display: none;
   flex-direction:row;
-  /*position: absolute;*/
-  background-color: var(--color-accent);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -40,15 +46,17 @@
 
 /* Links inside the dropdown */
 .theme-dropdown button {
-  color: black;
   padding: 4px 8px;
+  background-color: var(--color-secondary-dark);
+  color: white;
   text-decoration: none;
   display: block;
+  cursor: pointer;
 }
 
 .theme-dropdown button[aria-pressed="true"] {
-  background-color: radial-gradient(var(--color-primary), var(--color-secondary));
-  color: var(--color-accent);
+  background-color: var(--color-accent);
+  color: var(--color-secondary-dark);
 }
 
 /* Change color of dropdown links on hover */

@@ -20,7 +20,7 @@
   z-index: 10000;
   font-family: 'BitcountGrid';
   flex: 2;
-  background-color: pink;
+  background-color: var(--color-primary);
   color: var(--color-secondary-dark);
   border: none;
   outline: none;
@@ -44,15 +44,6 @@
 .icon-container span {
   font-family: 'NerdFont';
   pointer-events: none;
-}
-
-/* Theme selector button icon */
-.dropbtn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 /* Change background color of buttons on hover */

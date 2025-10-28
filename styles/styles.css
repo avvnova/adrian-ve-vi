@@ -139,6 +139,10 @@ footer{ bottom: 0%; }
   align-items: stretch;
   width: 100vw;
 }
+.flexbox-item{ 
+  padding: 10px;
+  display: flex;
+}
 .margin{
   color: var(--color-primary);
   background-color: var(--color-secondary);
@@ -147,9 +151,6 @@ footer{ bottom: 0%; }
   height: 3vh;
   z-index: 3
 }
-.flexbox-item{ 
-  padding: 10px;
-  display: block;}
 
 #lhs-wrapper{ flex: 1 1 60%; }
 #rhs-wrapper{ flex: 2 1 40%; }
