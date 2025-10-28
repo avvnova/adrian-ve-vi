@@ -6,7 +6,8 @@
 }
 /* Style the tab */
 .tab {
-  overflow: hidden;
+  z-index:0;
+  overflow: scroll;
   display: flex;
   justify-content: space-between;
   border: 1px solid var(--color-primary-dark);
@@ -14,27 +15,53 @@
 }
 
 /* Style the buttons inside the tab */
-.tab button {
+.tablinks {
+  position: relative;
+  z-index: 10000;
   font-family: 'BitcountGrid';
-  flex: 1;
-  background-color: var(--color-primary);
+  flex: 2;
+  background-color: pink;
   color: var(--color-secondary-dark);
-  float: left;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon-container {
+  display: block;
+  margin-top: 5px;
+  pointer-events: none;
+}
+
+.icon-container span {
+  font-family: 'NerdFont';
+  pointer-events: none;
+}
+
+/* Theme selector button icon */
+.dropbtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tablinks:hover {
   background-color: var(--color-accent);
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
+.tablinks.active {
   background-color: var(--color-primary-dark);
 }
 

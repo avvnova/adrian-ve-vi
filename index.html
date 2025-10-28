@@ -38,12 +38,12 @@
       <div id="lhs-wrapper" class="wrapper flexbox-item">
       <div class="order">    
           <div class="tab">
-            <button class="tablinks" data-origin="home">home <p style="font-family:NerdFont;"class="nf-md-home"></i></button>
-            <button class="tablinks" data-origin="about">about <p style="font-family:NerdFont;"class="nf-md-account"></i></button>
-            <button class="tablinks" data-origin="career">career <p style="font-family:NerdFont;"class="nf-md-briefcase"></i></button>
-            <button class="tablinks" data-origin="hobbies">hobbies <p style="font-family:NerdFont;"class="nf-md-tag_heart"></i></button>
-            <button class="tablinks" data-origin="projects">projects <p style="font-family:NerdFont;"class="nf-md-wrench"></i></button>
-            <button class="tablinks" data-origin="blog">blog <p style="font-family:NerdFont;"class="nf-md-pencil"></i></button>
+            <button class="tablinks" data-origin="home">home<span class="icon-container"><span class="nf-md-home"></span></span></button>
+            <button class="tablinks" data-origin="about">about<span class="icon-container"><span class="nf-md-account"></span></span></button>
+            <button class="tablinks" data-origin="career">career<span class="icon-container"><span class="nf-md-briefcase"></span></span></button>
+            <button class="tablinks" data-origin="hobbies">hobbies<span class="icon-container"><span class="nf-md-tag_heart"></span></span></button>
+            <button class="tablinks" data-origin="projects">projects<span class="icon-container"><span class="nf-md-wrench"></span></span></button>
+            <button class="tablinks" data-origin="blog">blog<span class="icon-container"><span class="nf-md-pencil"></span></span></button>
           </div>
           <div data-target="home" class="tab-content" style="display: grid;">
             <div class="sidebar tab-column">
@@ -192,7 +192,7 @@
       </div>
 
       <div id="theme-selector" class="flexbox-item">
-        <button onclick="dropdownFn()" class="dropbtn"><i style="font-family:NerdFont;"class="nf-dev-git_branch"></i> main</i></button>
+        <button onclick="dropdownFn()" class="dropbtn">main<span id="theme-icon"></span><span class="nf-dev-git_branch"></span></span></button>
         <div id="themes" class="theme-dropdown">
           <button data-theme="blossom-orange" aria-pressed="true">blossom-orange</button>
           <button data-theme="dark-forest" aria-pressed="false">dark-forest</button>
