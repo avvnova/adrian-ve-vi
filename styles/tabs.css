@@ -69,6 +69,10 @@
   overflow: auto;
 }
 
+.tab-content h3, p, li{
+  color: var(--font-color);
+}
+
 .tabimage {
   display: none;
   padding: 6px 12px;
