@@ -47,7 +47,7 @@
   --background-gif: url('/assets/gifs/blossom-orange.gif');
   --background-jpg: url('/assets/images/blossom-orange.jpg');
   --bullet-style: "\1F359";
-  --toggle-emoji: "\1F34A"
+  --toggle-emoji: "\1F34A";
   --font-color: var(--color-secondary-dark);
 } 
 
@@ -73,7 +73,7 @@
   --color-accent:#d6ffff;
   --background-gif: url('/assets/gifs/gemstone.gif');
   --background-jpg: url('/assets/images/gemstone.jpg');
-  --bullet-style: "\1F48E"
+  --bullet-style: "\1F48E";
   --font-color:var(--color-secondary-dark);
 }
 
