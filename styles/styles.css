@@ -55,8 +55,8 @@
   --color-primary:#000033;
   --color-primary-dark:#333333;
   /* Primary needs to contrast with background */
-  --color-secondary:#6699CC;
-  --color-secondary-dark:#99CCFF;
+  --color-secondary:#99CCFF;
+  --color-secondary-dark:#6699CC;
   --color-accent:#3366CC;
   --background-gif: url('/assets/gifs/nightwing-blue.gif');
   --background-jpg: url('/assets/images/nightwing-blue.jpg');

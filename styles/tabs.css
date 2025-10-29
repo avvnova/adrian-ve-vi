@@ -11,7 +11,6 @@
   display: flex;
   justify-content: space-between;
   border: 1px solid var(--color-primary-dark);
-  background-color: var(--color-primary);
 }
 
 /* Style the buttons inside the tab */
@@ -64,7 +63,7 @@
   grid-template-columns: 40% 60%;
   padding: 6px 12px;
   border: 1px solid var(--color-primary-dark);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(7.5px);
   border-top: none;
   overflow: auto;
 }
