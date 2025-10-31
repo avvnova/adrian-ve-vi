@@ -91,9 +91,9 @@ body{
     background-position: center;
 }
 
-p, a, span{
+p, span, a, li{
   font-family: 'PixelifySans';
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 a{
@@ -103,12 +103,12 @@ a{
 
 h1{
   font-family: '04B_30';
-  font-size: 2em;
+  font-size: 2rem;
 }
 /* h2 styles will be added when needed */
 h3{
   font-family: '04B_30';
-  font-size: 1.75em;
+  font-size: 1.75rem;
   margin:5px;  
 }
 header{ top: 0%; }
@@ -219,7 +219,7 @@ footer{ bottom: 0%; }
 /* Small mobile devices */
 @media screen and (max-width: 480px) {
   h3 {
-    font-size: 2em;
+    font-size: 2rem;
   }
 
   .margin {
