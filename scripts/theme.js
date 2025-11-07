@@ -1,4 +1,4 @@
-const themeSwitcher =document.querySelector('.theme-dropdown');
+const themeSwitcher = document.querySelector('.theme-dropdown');
 const buttons = themeSwitcher.querySelectorAll('button');
 
 const handleThemeSelection = (event) => {

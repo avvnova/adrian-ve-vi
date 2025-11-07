@@ -16,7 +16,7 @@
 
   // Tweakables
   const intensityPx = 0.3;   // max pixel jitter
-  const rotationDeg = 0.08;  // max rotation
+  const rotationDeg = 0.2;  // max rotation
   const updateEveryMs = 90;  // pick a new random target every N ms
   const smoothing = 0.15;    // approach [0..1], higher = snappier
 
