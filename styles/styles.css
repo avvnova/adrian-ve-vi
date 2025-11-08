@@ -172,7 +172,9 @@ footer{ bottom: 0%; }
   transition: box-shadow 0.5s ease-in-out;
 }
 #logo.glowing { box-shadow: 0 0 10px var(--color-accent), 0 0 20px var(--color-accent), 0 0 30px var(--color-accent); }
-#credits{ display: inline; }
+#socials, #credits, #theme-selector {
+    display:inline;
+  }
 
 /* Mobile responsive styles */
 @media screen and (max-width: 768px) {
