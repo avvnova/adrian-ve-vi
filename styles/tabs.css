@@ -68,7 +68,7 @@
   overflow: auto;
 }
 
-.tab-content h3, p, li{
+.tab-content p, li{
   color: var(--font-color);
 }
 

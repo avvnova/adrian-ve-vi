@@ -32,14 +32,15 @@
   --color-accent: #bf4f51;
   --background-gif: url('/assets/gifs/dark-forest.gif');
   --background-jpg: url('/assets/images/dark-forest.jpg');
+  --icon: url('/assets/icons/dark-forest-icon.png');
   --bullet-style: "\1F940";
   --toggle-emoji: "\127801";
   --font-color: var(--color-primary);
 }
 
 [data-selected-theme="blossom-orange"] {
-  --color-primary: #ff950a;
-  --color-primary-dark: #b86800;
+  --color-primary: #ffad63;
+  --color-primary-dark: #b15404;
   /* Primary needs to contrast with background */
   --color-secondary: #160f29;
   --color-secondary-dark: #000011;
@@ -60,6 +61,7 @@
   --color-accent:#3366CC;
   --background-gif: url('/assets/gifs/nightwing-blue.gif');
   --background-jpg: url('/assets/images/nightwing-blue.jpg');
+  --icon: url('/assets/images/nightwing-avv.png');
   --bullet-style: "\1F30";
   --font-color:var(--color-secondary);
 }
@@ -115,7 +117,7 @@ h1{
 
 h2 {
   font-family: '04B_30';
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: var(--color-primary-dark);
   margin-top: 0;
   margin-bottom: 1rem;
@@ -125,9 +127,10 @@ h2 {
   padding: 0.5rem 0;
 }
 h3{
-  font-family: '04B_30';
-  font-size: 1.75rem;
-  margin:5px;  
+  font-family: 'BitcountGrid';
+  font-size: 1.5rem;
+  margin:5px;
+  color: var(--color-secondary)
 }
 header{ top: 0%; }
 footer{ bottom: 0%; }
@@ -176,13 +179,14 @@ footer{ bottom: 0%; }
 
 #lhs-wrapper{ flex: 1 1 60%; }
 #rhs-wrapper{ flex: 2 1 40%; }
-
-/* IDs */
-#logo-wrapper{ 
+.logo-wrapper{ 
   position: relative;
   margin-top: 15%;
   padding: 15% 25%;
 }
+
+/* IDs */
+
 #logo{
   position: absolute;
   transform:rotate(-0.10turn);
@@ -213,7 +217,7 @@ footer{ bottom: 0%; }
     flex: 1 1 100%;
   }
 
-  #logo-wrapper {
+  .logo-wrapper {
     margin-top: 5%;
     padding: 10% 15%;
   }
