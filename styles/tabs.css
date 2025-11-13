@@ -75,8 +75,9 @@
 .tabimage {
   display: none;
   padding: 6px 12px;
-  border: 1px solid var(--color-primary-dark);
-  border-top: none;
+  max-width:300px;
+  position: absolute; 
+  bottom:0;
 }
 
 .sidebar{

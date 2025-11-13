@@ -38,12 +38,12 @@
 }
 
 [data-selected-theme="blossom-orange"] {
-  --color-primary: #ff950aff;
-  --color-primary-dark: #b86800ff;
+  --color-primary: #ff950a;
+  --color-primary-dark: #b86800;
   /* Primary needs to contrast with background */
-  --color-secondary: #160f29ff;
-  --color-secondary-dark: #000011ff;
-  --color-accent: #fdef83ff;
+  --color-secondary: #160f29;
+  --color-secondary-dark: #000011;
+  --color-accent: #fdef83;
   --background-gif: url('/assets/gifs/blossom-orange.gif');
   --background-jpg: url('/assets/images/blossom-orange.jpg');
   --bullet-style: "\1F359";

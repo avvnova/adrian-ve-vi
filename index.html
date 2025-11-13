@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-selected-theme="gemstone">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
 
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/tabs.css" />
     <link rel="stylesheet" href="styles/webfont.css" />
     <link rel="stylesheet" href="styles/switch.css" />
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="icon" type="image/png" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adrian Velez Villanueva</title>
   </head>
@@ -44,10 +44,10 @@
             <button class="tablinks" data-origin="projects">projects<span class="icon-container"><span class="nf-md-wrench"></span></span></button>
             <button class="tablinks" data-origin="blog">blog<span class="icon-container"><span class="nf-md-pencil"></span></span></button>
           </div>
-          <div data-target="home" class="tab-content" style="display: grid;">
+          <div data-target="home" class="tab-content">
             <div class="sidebar tab-column">
               <h3>adrian velez villanueva</h3>
-              <img src="" class="tabimage" alt="home icon" />
+              <img src="assets/images/kirby-placeholder.gif" class="tabimage" data-target="home" />
             </div>
             <div class="mainbar tab-column">
               <p>Software/DevOps engineer, artist, passable employee, generally okay person.</p>
@@ -225,8 +225,6 @@
               </ul>
             </div>
           </div>
-
-          <img src="" class="tabimage" data-target="about" />
           <img src="" class="tabimage" data-target="career" />
         </div>
 
@@ -236,7 +234,8 @@
 
       <div id="rhs-wrapper" class="wrapper flexbox-item">
         <div id="logo-wrapper">
-          <img id="logo" alt="-.-" src="assets/images/face.png" />
+          <img data-target="home" id="logo" alt="-.-" src="assets/images/face.png" />
+          <img data-target="about" id="logo" alt="-.-" src="assets/images/dumbface.png" />
           <!--We're gonna need this to be an svg if we want a glow effect.-->
           <script src="scripts/logo-animation.js"></script>
         </div>
