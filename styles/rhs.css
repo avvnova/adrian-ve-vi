@@ -1,0 +1,38 @@
+.logo-wrapper{ 
+
+  position: relative;
+  width: 100%;
+  height: 70%;
+}
+.text-wrapper{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  margin-bottom: 20%;
+}
+.side-image{
+  display: none;
+  position: absolute;
+  height: inherit;
+  /*min-height: 50vh;
+  min-width: inherit;
+  max-height: 50vh;
+  min-width: inherit;*/
+  box-shadow: 0 0 5px var(--color-accent), 0 0 10px var(--color-accent), 0 0 20px var(--color-accent);
+}
+#logo{
+  display: grid;
+  transform:rotate(-0.10turn);
+  transition: box-shadow 0.5s ease-in-out;
+}
+#right-board{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 20% 0%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+    justify-content: space-between; /* Centers items horizontally within their grid areas */
+  align-items: center;
+}

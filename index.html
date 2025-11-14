@@ -5,7 +5,8 @@
 
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/dropdown.css" />
-    <link rel="stylesheet" href="styles/tabs.css" />
+    <link rel="stylesheet" href="styles/lhs.css" />
+    <link rel="stylesheet" href="styles/rhs.css" />
     <link rel="stylesheet" href="styles/webfont.css" />
     <link rel="stylesheet" href="styles/switch.css" />
     <link rel="icon" type="image/png" href='/assets/images/avv-icon-full.png' />
@@ -36,7 +37,7 @@
     <main class="flexbox-container">
       
       <div id="lhs-wrapper" class="wrapper flexbox-item">
-      <div class="order">    
+      <div id="left-board" class="board">    
           <div class="tab">
             <button class="tablinks" data-origin="home">home<span class="icon-container"><span class="nf-md-home"></span></span></button>
             <button class="tablinks" data-origin="about">about<span class="icon-container"><span class="nf-md-account"></span></span></button>
@@ -236,17 +237,19 @@
       </div>
 
       <div id="rhs-wrapper" class="wrapper flexbox-item">
-        <div class="logo-wrapper" >
-          <img id="logo" class="side-image" alt="-.-" data-target="home" src="assets/icons/face.png" />
-          <img id="kirby"  alt="TestImage2" class="side-image" data-target="hobbies" src="assets/gifs/kirby-placeholder.gif" />
-          <img id="about" alt="TestImage3" class="side-image" data-target="about" src="" />
-          <img id="career" alt="TestImage4" class="side-image" data-target="career" src="" />
-        </div>
-        <div class="text-wrapper">
-          <h3 data-target="home" alt="test0">Test0</h3>
-          <h3 data-target="about" alt="test1">Test1</h3>
-          <h3 data-target="hobbies" alt="test2">Test2</h3>
-          <h3 data-target="career" alt="test3">Test3</h3>
+        <div class="board" id="right-board">
+          <div class="logo-wrapper" >
+            <img id="logo" class="side-image" alt="-.-" data-target="home" src="assets/icons/face.png" />
+            <img id="kirby"  alt="TestImage2" class="side-image" data-target="hobbies" src="assets/gifs/kirby-placeholder.gif" />
+            <img id="about" alt="TestImage3" class="side-image" data-target="about" src="/assets/images/green-triangle.png" />
+            <img id="career" alt="TestImage4" class="side-image" data-target="career" src="" />
+          </div>
+          <div class="text-wrapper">
+            <h3 data-target="home" alt="test0">Test0</h3>
+            <h3 data-target="about" alt="test1">Test1</h3>
+            <h3 data-target="hobbies" alt="test2">Test2</h3>
+            <h3 data-target="career" alt="test3">Test3</h3>
+          </div>
         </div>
         <script src="scripts/logo-animation.js"></script>
       </div>
