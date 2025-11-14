@@ -32,7 +32,7 @@
   --color-accent: #bf4f51;
   --background-gif: url('/assets/gifs/dark-forest.gif');
   --background-jpg: url('/assets/images/dark-forest.jpg');
-  --icon: url('/assets/icons/dark-forest-icon.png');
+  --home-image: url('/assets/images/green-triangle-1.png');
   --bullet-style: "\1F940";
   --toggle-emoji: "\127801";
   --font-color: var(--color-primary);
@@ -47,6 +47,7 @@
   --color-accent: #fdef83;
   --background-gif: url('/assets/gifs/blossom-orange.gif');
   --background-jpg: url('/assets/images/blossom-orange.jpg');
+  --home-image: url('/assets/images/orange-triangle.png');
   --bullet-style: "\1F359";
   --toggle-emoji: "\1F34A";
   --font-color: var(--color-secondary-dark);
@@ -61,7 +62,7 @@
   --color-accent:#3366CC;
   --background-gif: url('/assets/gifs/nightwing-blue.gif');
   --background-jpg: url('/assets/images/nightwing-blue.jpg');
-  --icon: url('/assets/images/nightwing-avv.png');
+  --home-image: url('/assets/images/blue-triangle.png');
   --bullet-style: "\1F30";
   --font-color:var(--color-secondary);
 }
@@ -75,6 +76,7 @@
   --color-accent:#d6ffff;
   --background-gif: url('/assets/gifs/gemstone.gif');
   --background-jpg: url('/assets/images/gemstone.jpg');
+  --home-image: url('/assets/images/green-triangle-.png');
   --bullet-style: "\1F48E";
   --font-color:var(--color-secondary-dark);
 }
@@ -105,7 +107,7 @@ a{
 }
 
 a.active-content {
-  color: var(--color-primary);
+  color: var(--font-color);
   text-shadow: 0px 0px 5px var(--color-accent);
   font-weight: bold;
 }
@@ -118,9 +120,10 @@ h1{
 h2 {
   font-family: '04B_30';
   font-size: 1.75rem;
-  color: var(--color-primary-dark);
-  margin-top: 0;
-  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+#title{
+  margin: 5px;
 }
 
 .content-section {
@@ -129,8 +132,7 @@ h2 {
 h3{
   font-family: 'BitcountGrid';
   font-size: 1.5rem;
-  margin:5px;
-  color: var(--color-secondary)
+  color: var(--color-primary-dark)
 }
 header{ top: 0%; }
 footer{ bottom: 0%; }
@@ -165,8 +167,8 @@ footer{ bottom: 0%; }
   width: 100vw;
 }
 .flexbox-item{ 
-  padding: 10px;
   display: flex;
+  flex-shrink: 1;
 }
 .margin{
   color: var(--color-primary);
@@ -174,7 +176,14 @@ footer{ bottom: 0%; }
   position: fixed;
   justify-content: space-between;
   height: 3vh;
-  z-index: 3
+  z-index: 3;
+}
+
+.socicon{
+  height:3vh;
+}
+.socicon:hover{
+ height: 3.3vh;
 }
 
 #lhs-wrapper{ flex: 1 1 60%; }
@@ -184,15 +193,17 @@ footer{ bottom: 0%; }
   margin-top: 15%;
   padding: 15% 25%;
 }
-
-/* IDs */
-
-#logo{
+.side-image{
+  display: none;
   position: absolute;
+  box-shadow: 0 0 5px var(--color-accent), 0 0 10px var(--color-accent), 0 0 20px var(--color-accent);
+}
+#logo{
+  display: grid;
   transform:rotate(-0.10turn);
-  box-shadow: 0 0 5px var(--color-accent), 0 0 10px var(--color-accent), 0 0 15px var(--color-accent);
   transition: box-shadow 0.5s ease-in-out;
 }
+
 #logo.glowing { box-shadow: 0 0 10px var(--color-accent), 0 0 20px var(--color-accent), 0 0 30px var(--color-accent); }
 #socials, #credits, #theme-selector {
     display:inline;

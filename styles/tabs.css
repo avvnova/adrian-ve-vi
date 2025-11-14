@@ -16,7 +16,7 @@
 /* Style the buttons inside the tab */
 .tablinks {
   position: relative;
-  z-index: 10000;
+  z-index: 10;
   font-family: 'BitcountGrid';
   flex: 2;
   background-color: var(--color-primary);
@@ -68,6 +68,10 @@
   overflow: auto;
 }
 
+[data-target="home"].tab-content{
+  display: grid;
+}
+
 .tab-content p, li{
   color: var(--font-color);
 }
@@ -86,8 +90,9 @@
 
 .sidebar-list{
   list-style-type: var(--bullet-style);
-  margin-top: 5%;
-  padding-left: 20px;
+  margin: 24px 10px;
+  padding-left: 10px;
+  padding-top:25px;
 }
 
 .sidebar-list li{
