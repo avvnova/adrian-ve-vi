@@ -1,7 +1,7 @@
 .order {
   display: grid;
   box-sizing: border-box;
-  border: solid 10px;
+  border: var(--border-style) 10px var(--font-color);
   margin: 15% 20%;
 }
 /* Style the tab */
@@ -63,7 +63,7 @@
   grid-template-columns: 40% 60%;
   padding: 6px 12px;
   border: 1px solid var(--color-primary-dark);
-  backdrop-filter: blur(7.5px);
+  backdrop-filter: blur(10px);
   border-top: none;
   overflow: auto;
 }

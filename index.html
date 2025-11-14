@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
 
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/theme-selector.css" />
+    <link rel="stylesheet" href="styles/dropdown.css" />
     <link rel="stylesheet" href="styles/tabs.css" />
     <link rel="stylesheet" href="styles/webfont.css" />
     <link rel="stylesheet" href="styles/switch.css" />
@@ -53,7 +53,7 @@
               <p>Software/DevOps engineer, artist, passable employee, generally okay person.</p>
               <p>Currently employed at Lowe's working for their Telemetry Platform, specializing in <b>GoLang</b>, <b>React</b>, and <b>Kubernetes</b>.</p>
               <p>Feel free to browse around the site, I've got professional and casual things here so you get a good idea of both my technical experience and personality. :)</p>
-              <br><p style="font-size:small;">If the background is too active for your eyes, feel free to toggle it on the top right.</p>
+              <br><p style="font-size:1rem;">If the background is too active for your eyes, feel free to toggle it on the top right.</p>
             </div>
           </div>
 
@@ -69,7 +69,7 @@
                 <br>
                 <li><a href="https://www.linkedin.com/in/adrian-velez-villanueva/" target="_blank">LinkedIn</a></li>
                 <br>
-                <li><a href="assets/VelezVillanueva-Resume.pdf" target="_blank">Resume</a><span style="text-shadow: 0px 0px 3px var(--color-secondary);color: var(--color-accent); margin-left: 5px; font-family: 'NerdFont'; font-size: small;"class="nf-md-download"></span></li>
+                <li><a href="assets/VelezVillanueva-Resume.pdf" target="_blank">Resume</a><span style="text-shadow: 0px 0px 3px var(--color-secondary);color: var(--color-accent); margin-left: 5px; font-family: 'NerdFont'; font-size: medium;"class="nf-md-download"></span></li>
               </ul>
             </div>
             <div class="mainbar tab-column">
@@ -93,7 +93,7 @@
               <div class="content-section" data-section="experience" style="display: none;">
                 <h3>Professional Experience</h3>
                 <div class="experience-item">
-                  <h3>Lowe's - Telemetry Platform</h3>
+                  <h4>Lowe's - Telemetry Platform</h4>
                   <p>Working on building and maintaining telemetry systems using GoLang, React, and Kubernetes.</p>
                 </div>
                 <!-- Add more experience items as needed -->
@@ -237,18 +237,25 @@
 
       <div id="rhs-wrapper" class="wrapper flexbox-item">
         <div class="logo-wrapper" >
-          <img id="logo"class="side-image" alt="-.-" data-target="home" src="assets/icons/face.png" />
-          <img id="kirby" class="side-image" data-target="about" src="assets/gifs/kirby-placeholder.gif" />
+          <img id="logo" class="side-image" alt="-.-" data-target="home" src="assets/icons/face.png" />
+          <img id="kirby"  alt="TestImage2" class="side-image" data-target="hobbies" src="assets/gifs/kirby-placeholder.gif" />
+          <img id="about" alt="TestImage3" class="side-image" data-target="about" src="" />
+          <img id="career" alt="TestImage4" class="side-image" data-target="career" src="" />
         </div>
         <div class="text-wrapper">
-          <p data-target="home"></p>
+          <h3 data-target="home" alt="test0">Test0</h3>
+          <h3 data-target="about" alt="test1">Test1</h3>
+          <h3 data-target="hobbies" alt="test2">Test2</h3>
+          <h3 data-target="career" alt="test3">Test3</h3>
         </div>
         <script src="scripts/logo-animation.js"></script>
       </div>
     </main>
 
     <footer class="flexbox-container margin">
-      <div id="socials" class="flexbox-item">
+      <div id="links" class="dropdown flexbox-item">
+        <button class="dropdown-btn"><span class="icon nf-md-link_variant"></span>links</button>
+        <div class="dropdown-list">
         <a href="https://linktr.ee/adrian_velvil" target="_blank">
           <img
             src="assets/icons/linktree.png"
@@ -284,22 +291,22 @@
             loading="lazy"
             class="socicon"/>
         </a>
+        </div>
       </div>
-      <div id="credits" class="flexbox-item">
-        <span class="copy">© Copyright 2025</span>
-      </div>
-      <div id="theme-selector" class="flexbox-item">
-        <button onclick="dropdownFn()" class="dropbtn"><span id="theme-icon" class="nf-dev-git_branch"></span></span>main</button>
-        <div id="themes" class="theme-dropdown">
+      <div id="credits" class="flexbox-item">Built and maintained in Charlotte, NC. © Copyright 2025</div>
+      <div id="themes" class="dropdown flexbox-item">
+        <button class="dropdown-btn"><span class="icon nf-dev-git_branch"></span>main</button>
+        <div id="elements" class="dropdown-list">
           <button data-theme="blossom-orange" aria-pressed="true">blossom-orange</button>
           <button data-theme="dark-forest" aria-pressed="false">dark-forest</button>
           <button data-theme="nightwing-blue" aria-pressed="false">nightwing-blue</button>
           <button data-theme="gemstone" aria-pressed="false">gemstone</button>
         </div>
-        <script src="scripts/theme.js"></script>
       </div>
     </footer>
     <script src="scripts/tabs.js"></script>
     <script src="scripts/crt-effect.js"></script>
+    <script src="scripts/dropdown.js"></script>
+    <script src="scripts/theme.js"></script>
   </body>
 </html>
