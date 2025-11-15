@@ -1,7 +1,7 @@
 #left-board{
   border: var(--border-style) 10px var(--font-color);
-  margin: 15% 20%;
-    display: grid;
+  margin: 15% 15%;
+  display: grid;
 }
 /* Style the tab */
 .tab {
@@ -73,6 +73,9 @@ a.active-content {
   font-weight: bold;
 }
 
+.experience-item > p{
+  padding: 0px;
+}
 
 [data-target="home"].tab-content{
   display: grid;
@@ -102,7 +105,6 @@ a.active-content {
   list-style-type: var(--bullet-style);
   margin: 24px 10px;
   padding-left: 10px;
-  padding-top:25px;
 }
 
 .sidebar-list li{
@@ -115,7 +117,7 @@ a.active-content {
 }
 
 .mainbar p{
-  padding-top: 5%;
+  padding-left: 10px;
   overflow:auto;
 }
 

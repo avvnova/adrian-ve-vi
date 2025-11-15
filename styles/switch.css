@@ -1,12 +1,13 @@
 
 /* The switch itself */
 .switch {
-
   position: relative;
   display: inline-block;
   width: 2.8vw;
   right: 0.1vw;
-  border:5px groove var(--color-primary-dark);
+  height: 2.5vh;
+  margin: 3px;
+  border: 3px groove var(--color-primary-dark);
 }
 
 /* Hide default HTML checkbox */
@@ -33,7 +34,7 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 2.25vh;
+  height: 2.5vh;
   width: 1.2vw;
   left: 0;
   bottom: 0;

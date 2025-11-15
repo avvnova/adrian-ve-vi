@@ -1,23 +1,30 @@
 .logo-wrapper{ 
-
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 70%;
+  height: 60%;
+  margin-top: 25%;
 }
 .text-wrapper{
+  display: flex;
+  margin-top: 15%;
+  bottom: 50px;
   position: relative;
   width: 100%;
-  height: 50%;
-  margin-bottom: 20%;
+  height: 30%;
+  justify-content: center;
+}
+.text-wrapper>h3{
+  display: none;
 }
 .side-image{
   display: none;
   position: absolute;
   height: inherit;
-  /*min-height: 50vh;
-  min-width: inherit;
-  max-height: 50vh;
-  min-width: inherit;*/
+  min-height: 350px;
+  min-width: 200px;
   box-shadow: 0 0 5px var(--color-accent), 0 0 10px var(--color-accent), 0 0 20px var(--color-accent);
 }
 #logo{
@@ -29,10 +36,26 @@
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  margin: 20% 0%;
-  align-items: center;
+  padding: 20px;
+  gap: 20px;
   display: flex;
-  flex-direction: column;
-    justify-content: space-between; /* Centers items horizontally within their grid areas */
+  flex-direction: column; 
   align-items: center;
+  justify-content: center;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+  #right-board {
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+  .logo-wrapper {
+    height: 150px;
+  }
+  
+  .text-wrapper {
+    margin-top: 20px;
+  }
 }
