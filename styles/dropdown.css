@@ -5,14 +5,14 @@
   display: inline-block;
 }
 
-/* Dropdown Button */
+/* Button itself */
 .dropdown-btn {
   background-color: var(--color-secondary-dark);
+  height: 4vh;
   font-family: PixelifySans;
   color: white;
   padding: 8px;
   font-size: 1.2rem;
-  height: 3vh;
   min-width: 60px;
   border: none;
   cursor: pointer;

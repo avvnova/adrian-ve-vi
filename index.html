@@ -9,52 +9,78 @@
     <link rel="stylesheet" href="styles/rhs.css" />
     <link rel="stylesheet" href="styles/webfont.css" />
     <link rel="stylesheet" href="styles/switch.css" />
-    <link rel="icon" type="image/png" href='/assets/images/avv-icon-full.png' />
+    <link rel="icon" type="image/png" href="/assets/images/avv-icon-full.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adrian Velez Villanueva</title>
   </head>
   <body>
-    <!--track which section to show first in the main site-->
-
-    <!-- Handler for entering the main site, sets the initial section-->
-
-    <!-- If showMain is true, render the main site with the selected section-->
-
-    <!-- Otherwise, render the landing page-->
     <header class="flexbox-container margin">
-      <div class="flexbox-item" style="padding:0;"><h2 id="title">Adrian Emilio Velez Villanueva</h2></div>
-      <div class="flexbox-item" style="padding:0;">
-      <label class="switch">
-        <input type="checkbox" id="bg-toggle" onchange="freezeBackground()" checked/>
-        <span class="slider"></span>
-      </label>
+      <div class="flexbox-item" style="padding: 0">
+        <h2 id="title">Adrian Emilio Velez Villanueva</h2>
+      </div>
+      <div class="flexbox-item" style="padding: 0">
+        <label class="switch">
+          <input
+            type="checkbox"
+            id="bg-toggle"
+            onchange="freezeBackground()"
+            checked
+          />
+          <span class="slider"></span>
+        </label>
       </div>
       <script src="scripts/background-toggle.js"></script>
     </header>
-
     <div class="crt"></div>
-
     <main class="flexbox-container">
-      
       <div id="lhs-wrapper" class="wrapper flexbox-item">
-      <div id="left-board" class="board">    
+        <div id="left-board" class="board">
           <div class="tab">
-            <button class="tablinks" data-origin="home">home<span class="icon-container"><span class="nf-md-home"></span></span></button>
-            <button class="tablinks" data-origin="about">about<span class="icon-container"><span class="nf-md-account"></span></span></button>
-            <button class="tablinks" data-origin="hobbies">hobbies<span class="icon-container"><span class="nf-md-tag_heart"></span></span></button>
-            <button class="tablinks" data-origin="projects">projects<span class="icon-container"><span class="nf-md-wrench"></span></span></button>
-            <button class="tablinks" data-origin="blog">blog<span class="icon-container"><span class="nf-md-pencil"></span></span></button>
+            <button class="tablinks" data-origin="home">
+              home<span class="icon-container"
+                ><span class="nf-md-home"></span
+              ></span>
+            </button>
+            <button class="tablinks" data-origin="about">
+              about<span class="icon-container"
+                ><span class="nf-md-account"></span
+              ></span>
+            </button>
+            <button class="tablinks" data-origin="hobbies">
+              hobbies<span class="icon-container"
+                ><span class="nf-md-tag_heart"></span
+              ></span>
+            </button>
+            <button class="tablinks" data-origin="projects">
+              projects<span class="icon-container"
+                ><span class="nf-md-wrench"></span
+              ></span>
+            </button>
+            <button class="tablinks" data-origin="blog">
+              blog<span class="icon-container"
+                ><span class="nf-md-pencil"></span
+              ></span>
+            </button>
           </div>
           <div data-target="home" class="tab-content">
             <div class="sidebar tab-column">
               <h2>adrian velez villanueva</h2>
-              <img id="home-image" class="tabimage" data-target="home"/>
+              <img id="home-image" class="tabimage" data-target="home" />
             </div>
             <div class="mainbar tab-column">
-              <p>Software/DevOps engineer, artist, passable employee, generally okay person.
-              <br>Currently employed at Lowe's working for their Telemetry Platform, specializing in <b>GoLang</b>, <b>React</b>, and <b>Kubernetes</b>.
-              <br>Feel free to browse around the site, I've got professional and casual things here so you get a good idea of both my technical experience and personality. :)</p>
-              <p style="font-size:1rem;">If the background is too active for your eyes, feel free to toggle it on the top right.</p>
+              <p>
+                Software engineer, artist, passable employee, generally
+                okay person. <br />Currently employed at Lowe's working for
+                their Telemetry Platform, specializing in <b>GoLang</b>,
+                <b>React</b>, and <b>Kubernetes</b>. <br />Feel free to browse
+                around the site, I've got professional and casual things here so
+                you get a good idea of both my technical experience and
+                personality. :)
+              </p>
+              <p style="font-size: 1rem">
+                If the background is too active for your eyes, feel free to
+                toggle it on the top right.
+              </p>
             </div>
           </div>
           <div data-target="about" class="tab-content">
@@ -62,41 +88,102 @@
               <h2>about</h2>
               <ul class="sidebar-list">
                 <li><a href="#" data-content="general">general</a></li>
-                <br>
+                <br />
                 <li><a href="#" data-content="skills">skills</a></li>
-                <br>
+                <br />
                 <li><a href="#" data-content="experience">experience</a></li>
-                <br>
-                <li><a href="https://www.linkedin.com/in/adrian-velez-villanueva/" target="_blank">LinkedIn</a></li>
-                <br>
-                <li><a href="assets/VelezVillanueva-Resume.pdf" target="_blank">Resume</a><span style="text-shadow: 0px 0px 3px var(--color-secondary);color: var(--color-accent); margin-left: 5px; font-family: 'NerdFont'; font-size: medium;"class="nf-md-download"></span></li>
+                <br />
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/adrian-velez-villanueva/"
+                    target="_blank"
+                    >LinkedIn</a
+                  >
+                </li>
+                <br />
+                <li>
+                  <a href="assets/VelezVillanueva-Resume.pdf" target="_blank"
+                    >Resume</a
+                  ><span
+                    style="
+                      text-shadow: 0px 0px 3px var(--color-secondary);
+                      color: var(--color-accent);
+                      margin-left: 5px;
+                      font-family: 'NerdFont';
+                      font-size: medium;
+                    "
+                    class="nf-md-download"
+                  ></span>
+                </li>
               </ul>
             </div>
             <div class="mainbar tab-column">
-              <div class="content-section" data-section="general" style="display: block;">
+              <div
+                class="content-section"
+                data-section="general"
+                style="display: block"
+              >
                 <h3>hey ^_^ hai 0.0 hiiii</h3>
-                <p>The name's <strong>Adrian</strong>(<i>ˈeɪdriən</i>), and I'm currently employed as a Full-Stack Software/DevOps Engineer at Lowe's Companies Inc.
-                <br>I'm incredibly interested in the field of HCI and its interactions with GIS for Spatial Social Network Mapping and Urban Design.
-                <br>When I'm not coding, you can find me working on a plethora of other things, like music, art, exercising, my garden, or just skating around.</p>
+                <p>
+                  The name's <strong>Adrian</strong>(<i>ˈeɪdriən</i>), and I'm
+                  currently employed as a Full-Stack Software/DevOps Engineer at
+                  Lowe's Companies Inc. <br />I'm incredibly interested in the
+                  field of HCI and its interactions with GIS for Spatial Social
+                  Network Mapping and Urban Design. <br />When I'm not coding,
+                  you can find me working on a plethora of other things, like
+                  music, art, exercising, my garden, or just skating around.
+                </p>
               </div>
-              <div class="content-section" data-section="skills" style="display: none;">
+              <div
+                class="content-section"
+                data-section="skills"
+                style="display: none"
+              >
                 <h3>Technical Skills</h3>
                 <ul>
-                  <li><strong>Languages:</strong><br> GoLang, Java, JavaScript, C++, C# Python, HTML/CSS</li><br>
-                  <li><strong>Frameworks:</strong><br> React, Node.js, Vue, Express, Typescript, Tailwind</li><br>
-                  <li><strong>Networking:</strong><br> Kubernetes, Docker, ArgoCD, Jenkins, Postman, Podman, Helm, GCP</li><br>
-                  <li><strong>Observability:</strong><br> ELK Stack (Elasticsearch, Logstash, Kibana), Fluentbit, Fluentd, Kafka, Opensearch</li>
+                  <li>
+                    <strong>Languages:</strong><br />
+                    GoLang, Java, JavaScript, C++, C# Python, HTML/CSS
+                  </li>
+                  <br />
+                  <li>
+                    <strong>Frameworks:</strong><br />
+                    React, Node.js, Vue, Express, Typescript, Tailwind
+                  </li>
+                  <br />
+                  <li>
+                    <strong>Networking:</strong><br />
+                    Kubernetes, Docker, ArgoCD, Jenkins, Postman, Podman, Helm,
+                    GCP
+                  </li>
+                  <br />
+                  <li>
+                    <strong>Observability:</strong><br />
+                    ELK Stack (Elasticsearch, Logstash, Kibana), Fluentbit,
+                    Fluentd, Kafka, Opensearch
+                  </li>
                 </ul>
               </div>
-              <div class="content-section" data-section="experience" style="display: none;">
+              <div
+                class="content-section"
+                data-section="experience"
+                style="display: none"
+              >
                 <h3>Professional Experience</h3>
                 <div class="experience-item">
                   <h4>Lowe's Companies LLC</h4>
-                  <p>Full-Stack Engineer building and maintaining observability & telemetry systems using GoLang, React, and Kubernetes for Onprem, Remote VM, and GCP Systems.</p>
+                  <p>
+                    Full-Stack Engineer building and maintaining observability &
+                    telemetry systems using GoLang, React, and Kubernetes for
+                    Onprem, Remote VM, and GCP Systems.
+                  </p>
                 </div>
                 <div class="experience-item">
                   <h4>Fast Enterprises LLC</h4>
-                  <p>Implementation Consultant assisting the Louisiana Department of Revenue with Frontend and Revenue Accounting development.</p>
+                  <p>
+                    Implementation Consultant assisting the Louisiana Department
+                    of Revenue with Frontend and Revenue Accounting development.
+                  </p>
                 </div>
               </div>
             </div>
@@ -105,50 +192,31 @@
           <div data-target="hobbies" class="tab-content">
             <div class="sidebar tab-column">
               <h2>hobbies</h2>
-              <ul class="sidebar-list">
-                <li><a href="#" data-content="art">art</a></li>
-                <br>
-                <li><a href="#" data-content="music">music</a></li>
-                <br>
-                <li><a href="#" data-content="reading">reading</a></li>
-                <br>
-                <li><a href="#" data-content="photography">photography</a></li>
-              </ul>
             </div>
             <div class="mainbar tab-column">
-              <div class="content-section" data-section="art" style="display: none;">
-                <h3>Art</h3>
-                  <p> 
-                    I've been doing visual art since I was a little kid, but have started stepping into Digital art.
-                  </p>
-              </div>
-              <div class="content-section" data-section="music" style="display: none;">
-                <h3>Music</h3>
-                  <p>
-                    I actually majored in Music Composition in college. Yeah. But nowadays I'm just a listener, and a player, not a writer. I play Bass guitar mainly these days, and here's my Spotify.
-                  </p>
-                  <a></a>
-              </div>
-              <div class="content-section" data-section="reading" style="display: none;">
-                <h3>Reading</h3>
-                <p>Read This Year</p>
-                <ul>
-                  <li>Ursula K LeGuin: Books of Earthsea</li>
-                  <li></li>
-                </ul>
-
-                <span> Currently Reading: </span><a></a>
-                <p>Reading Backlog:</p>
-                <ul>
-                  <li>The Castle : Frank Kafka</li>
-                </ul>
-              </div>
-              <div class="content-section" data-section="photography" style="display: none;">
-                <h3>Photography</h3>
-                <p> I picked up a Canon EOS Rebel T7 a few months ago from a pawn shop. Go to pawn shops more by the way. They're awesome.
-                <br> Anyway, I'm hooked on the camera now and take pictures whenever I'm somewhere new.
-                </p>
-              </div>
+              <h4>Music</h4>
+              <p>
+                I actually majored in Music Composition in college, but
+                nowadays I just play, don't really write anymore. I play
+                Bass guitar mainly these days, and here's my Spotify.
+              </p>
+              <a>https://open.spotify.com/user/avelez343</a>
+              <h4>Reading</h4>
+              <span style="color: var(--font-color);">Reading: <b>The Castle - Frank Kafka</b></span><a></a>
+              <p>Read in 2025:</p>
+              <ul>
+                <li>Books of Earthsea - Ursula K LeGuin</li>
+                <li>The Stranger - Albert Camus</li>
+              </ul>
+              <p>Backlog:</p>
+              <ul>
+                <li>McMindfulness</li>
+                <li>Why Nations Fail</li>
+              </ul>
+              <h4>Photography</h4>
+              <p>
+                I picked up a Canon EOS Rebel T7 a few months ago, so now I've got an album here.<br />
+              </p>
             </div>
           </div>
 
@@ -157,47 +225,72 @@
               <h2>projects</h2>
               <ul class="sidebar-list">
                 <li><a href="#" data-content="web">web dev</a></li>
-                <br>
+                <br />
                 <li><a href="#" data-content="backend">backend</a></li>
-                <br>
+                <br />
                 <li><a href="#" data-content="devops">devops</a></li>
-                <br>
+                <br />
                 <li><a href="#" data-content="personal">personal</a></li>
               </ul>
             </div>
             <div class="mainbar tab-column">
-              <div class="content-section" data-section="web" style="display: block;">
+              <div
+                class="content-section"
+                data-section="web"
+                style="display: block"
+              >
                 <h3>Web Development Projects</h3>
                 <div class="project-item">
-                  <p>This website! Built with HTML, CSS, and vanilla JavaScript.</p>
+                  <p>
+                    This website! Built with HTML, CSS, and vanilla JavaScript.
+                  </p>
                 </div>
                 <div class="project-item">
                   <p>My Neocities, my first web dev project.</p>
                 </div>
                 <!-- Add more web projects as needed -->
               </div>
-              <div class="content-section" data-section="backend" style="display: none;">
+              <div
+                class="content-section"
+                data-section="backend"
+                style="display: none"
+              >
                 <h3>Backend Projects</h3>
                 <div class="project-item">
                   <h4>API Services</h4>
-                  <p>Various backend services built with GoLang and other technologies.</p>
+                  <p>
+                    Various backend services built with GoLang and other
+                    technologies.
+                  </p>
                 </div>
                 <!-- Add more backend projects as needed -->
               </div>
-              <div class="content-section" data-section="devops" style="display: none;">
+              <div
+                class="content-section"
+                data-section="devops"
+                style="display: none"
+              >
                 <h3>DevOps Projects</h3>
                 <div class="project-item">
                   <h4>Kubernetes Deployments</h4>
-                  <p>Infrastructure as code and deployment pipelines for various applications.</p>
-
+                  <p>
+                    Infrastructure as code and deployment pipelines for various
+                    applications.
+                  </p>
                 </div>
                 <!-- Add more devops projects as needed -->
               </div>
-              <div class="content-section" data-section="personal" style="display: none;">
+              <div
+                class="content-section"
+                data-section="personal"
+                style="display: none"
+              >
                 <h3>Miscellaneous Projects</h3>
                 <div class="project-item">
                   <h4>Side Experiments</h4>
-                  <p>Various personal coding experiments and learning projects.</p>
+                  <p>
+                    Various personal coding experiments and learning projects.
+                  </p>
                 </div>
                 <!-- Add more personal projects as needed -->
               </div>
@@ -207,35 +300,84 @@
           <div data-target="blog" class="tab-content">
             <div class="sidebar tab-column">
               <h2>buh</h2>
-              <p> as currently not a writer who is not interested in beginning anytime soon, I think it is cruel and unusual punishment to be forced into making an obligatory SWE blog. 
-                <br> As such, I'm abstaining from this barbaric practice of our past generations.
-                <br> As an alternative, here's a list of <b>other</b> blogs, much better than one I could make.
+              <p>
+                as currently not a writer who is not interested in beginning
+                anytime soon, I think it is cruel and unusual punishment to be
+                forced into making an obligatory SWE blog. <br />
+                As such, I'm abstaining from this barbaric practice of our past
+                generations. <br />
+                As an alternative, here's a list of <b>other</b> blogs, much
+                better than one I could make.
               </p>
             </div>
             <div class="mainbar tab-column">
               <h3>blogs</h3>
               <ul class="sidebar-list">
-                <li><a href="https://www.lesswrong.com/">LessWrong: Rationality Forum</a></li>
-                <br>
-                <li><a href="https://timothymiller.dev/">Timothy Miller : Web Designer</a></li>
-                <br>
-                <li><a href="https://sethrobertson.github.io/">Seth Robertson : Git Best Practices</a></li>
-                <br>
-                <li><a href="https://mileshouse.neocities.org/">https://mileshouse.neocities.org/</a></li>
-                <br>
-                <li><a href="https://www.malnushi.com/">mal nushi : software eng</a></li>
-                <br>
-                <li><a href="https:/dshcodes.com/blog">david huang : software eng</a></li>
-                <br>
-                <li><a href="https://blog.ncase.me/">nicky case : writer, artist, game dev</a></li>
-                <br>
-                <li><a href="https://doqmeat.com/notebook/">Jes / Dogmeat: Just a cool website</a></li>
-                <br>
-                <li><a href="https://docs.mrchromebox.tech/">mrchromebox : chromebook modding</a></li>
-                <br>
-                <li><a href="https://www.wheresyoured.at/">Where's Your Ed At : tech blog</a></li>
-                <br>
-                <li><a href="https://thingsfittogether.com/">thingsfittogether : tech refs </a>
+                <li>
+                  <a href="https://www.lesswrong.com/"
+                    >LessWrong: Rationality Forum</a
+                  >
+                </li>
+                <br />
+                <li>
+                  <a href="https://timothymiller.dev/"
+                    >Timothy Miller : Web Designer</a
+                  >
+                </li>
+                <br />
+                <li>
+                  <a href="https://sethrobertson.github.io/"
+                    >Seth Robertson : Git Best Practices</a
+                  >
+                </li>
+                <br />
+                <li>
+                  <a href="https://mileshouse.neocities.org/"
+                    >https://mileshouse.neocities.org/</a
+                  >
+                </li>
+                <br />
+                <li>
+                  <a href="https://www.malnushi.com/"
+                    >mal nushi : software eng</a
+                  >
+                </li>
+                <br />
+                <li>
+                  <a href="https:/dshcodes.com/blog"
+                    >david huang : software eng</a
+                  >
+                </li>
+                <br />
+                <li>
+                  <a href="https://blog.ncase.me/"
+                    >nicky case : writer, artist, game dev</a
+                  >
+                </li>
+                <br />
+                <li>
+                  <a href="https://doqmeat.com/notebook/"
+                    >Jes / Dogmeat: Just a cool website</a
+                  >
+                </li>
+                <br />
+                <li>
+                  <a href="https://docs.mrchromebox.tech/"
+                    >mrchromebox : chromebook modding</a
+                  >
+                </li>
+                <br />
+                <li>
+                  <a href="https://www.wheresyoured.at/"
+                    >Where's Your Ed At : tech blog</a
+                  >
+                </li>
+                <br />
+                <li>
+                  <a href="https://thingsfittogether.com/"
+                    >thingsfittogether : tech refs
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -246,11 +388,35 @@
 
       <div id="rhs-wrapper" class="wrapper flexbox-item">
         <div class="board" id="right-board">
-          <div class="logo-wrapper" >
-            <img id="logo" class="side-image" alt="-.-" data-target="home" src="/assets/icons/face.png" />
-            <img id="kirby"  alt="TestImage2" class="side-image" data-target="hobbies" src="/assets/gifs/kirby-placeholder.gif" />
-            <img id="about" alt="TestImage3" class="side-image" data-target="about" src="/assets/images/green-triangle.png" />
-            <img id="career" alt="TestImage4" class="side-image" data-target="career" src="" />
+          <div class="logo-wrapper">
+            <img
+              id="logo"
+              class="side-image"
+              alt="-.-"
+              data-target="home"
+              src="/assets/icons/face.png"
+            />
+            <img
+              id="kirby"
+              alt="TestImage2"
+              class="side-image"
+              data-target="hobbies"
+              src="/assets/gifs/kirby-placeholder.gif"
+            />
+            <img
+              id="about"
+              alt="TestImage3"
+              class="side-image"
+              data-target="about"
+              src="/assets/images/green-triangle.png"
+            />
+            <img
+              id="career"
+              alt="TestImage4"
+              class="side-image"
+              data-target="career"
+              src=""
+            />
           </div>
           <div class="text-wrapper">
             <h3 data-target="home" alt="test0">Test0</h3>
@@ -265,52 +431,72 @@
 
     <footer class="flexbox-container margin">
       <div id="links" class="dropdown flexbox-item">
-        <button class="dropdown-btn"><span class="icon nf-md-link_variant"></span>links</button>
+        <button class="dropdown-btn">
+          <span class="icon nf-md-link_variant"></span>links
+        </button>
         <div class="dropdown-list">
-        <a href="https://linktr.ee/adrian_velvil" target="_blank">
-          <img
-            src="assets/icons/linktree.png"
-            alt="Linktree"
-            loading="lazy"
-            class="socicon"/>
-        </a>
-        <a href="https://www.instagram.com/adrian_velveeta/" target="_blank">
-          <img
-            src="assets/icons/instagram.png"
-            alt="Instagram"
-            loading="lazy"
-            class="socicon"/>
-        </a>
-        <a href="https://www.linkedin.com/in/adrian-velez-villanueva/" target="_blank">
-          <img
-            src="assets/icons/linkedin.png"
-            alt="linkedin"
-            loading="lazy"
-            class="socicon"/>
-        </a>
-        <a href="https://github.com/avvnova" target="_blank">
-          <img
-            src="assets/icons/github.png"
-            alt="Github"
-            loading="lazy"
-            class="socicon"/>
-        </a>
-        <a href="https://malmal.neocities.org/" target="_blank">
-          <img
-            src="assets/icons/Neocities_Logo.png"
-            alt="Neocities"
-            loading="lazy"
-            class="socicon"/>
-        </a>
+          <a href="https://linktr.ee/adrian_velvil" target="_blank">
+            <img
+              src="assets/icons/linktree.png"
+              alt="Linktree"
+              loading="lazy"
+              class="socicon"
+            />
+          </a>
+          <a href="https://www.instagram.com/adrian_velveeta/" target="_blank">
+            <img
+              src="assets/icons/instagram.png"
+              alt="Instagram"
+              loading="lazy"
+              class="socicon"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/adrian-velez-villanueva/"
+            target="_blank"
+          >
+            <img
+              src="assets/icons/linkedin.png"
+              alt="linkedin"
+              loading="lazy"
+              class="socicon"
+            />
+          </a>
+          <a href="https://github.com/avvnova" target="_blank">
+            <img
+              src="assets/icons/github.png"
+              alt="Github"
+              loading="lazy"
+              class="socicon"
+            />
+          </a>
+          <a href="https://malmal.neocities.org/" target="_blank">
+            <img
+              src="assets/icons/Neocities_Logo.png"
+              alt="Neocities"
+              loading="lazy"
+              class="socicon"
+            />
+          </a>
         </div>
       </div>
-      <div id="credits" class="flexbox-item">Built and maintained in Charlotte, NC. © Copyright 2025</div>
+      <div id="credits" class="flexbox-item">
+        Built and maintained in Charlotte, NC. © Copyright 2025
+      </div>
       <div id="themes" class="dropdown flexbox-item">
-        <button class="dropdown-btn"><span class="icon nf-dev-git_branch"></span>main</button>
+        <button class="dropdown-btn">
+          <span class="icon nf-dev-git_branch"></span>main
+        </button>
         <div id="elements" class="dropdown-list">
-          <button data-theme="blossom-orange" aria-pressed="true">blossom-orange</button>
-          <button data-theme="dark-forest" aria-pressed="false">dark-forest</button>
-          <button data-theme="nightwing-blue" aria-pressed="false">nightwing-blue</button>
+          <button data-theme="blossom-orange" aria-pressed="true">
+            blossom-orange
+          </button>
+          <button data-theme="dark-forest" aria-pressed="false">
+            dark-forest
+          </button>
+          <button data-theme="nightwing-blue" aria-pressed="false">
+            nightwing-blue
+          </button>
           <button data-theme="gemstone" aria-pressed="false">gemstone</button>
         </div>
       </div>

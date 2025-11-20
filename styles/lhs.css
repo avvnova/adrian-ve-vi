@@ -81,7 +81,7 @@ a.active-content {
   display: grid;
 }
 
-.tab-content p, li{
+.tab-content p, li, b{
   color: var(--font-color);
 }
 
