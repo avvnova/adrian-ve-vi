@@ -1,8 +1,6 @@
 function freezeBackground() {
     const checkbox = document.getElementById('bg-toggle');
-    if (checkbox.checked) {
-        document.body.style.backgroundImage = 'var(--background-gif)';
-    } else {
-        document.body.style.backgroundImage = 'var(--background-jpg)';
-    }
+
+    document.body.classList.toggle('freezer-on', checkbox.checked);
+    document.body.classList.toggle('freezer-off', !checkbox.checked);
 }

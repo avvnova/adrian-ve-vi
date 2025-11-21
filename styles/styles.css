@@ -69,6 +69,14 @@ html, body {
     width:100vw;
 }
 
+body.freezer-on {
+  background-image: var(--background-gif);
+}
+
+body.freezer-off {
+  background-image: var(--background-jpg);
+}
+
 body{
     background-image: var(--background-gif);
     background-size: cover;
