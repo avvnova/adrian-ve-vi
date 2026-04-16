@@ -1,22 +1,4 @@
-:root, 
-[data-selected-theme="dark-forest"] { 
-  --color-primary: #f5f5f5;
-  --color-primary-dark: #d5d5d5;
-  /* Primary needs to contrast with background */
-  --color-secondary: #236C5C;
-  --color-secondary-dark: #034C3C;
-  --color-accent: #ec6769;
-  --background-gif: url('../assets/gifs/dark-forest.gif');
-  --background-jpg: url('../assets/images/dark-forest.jpg');
-  --home-image: url('../assets/images/green-triangle-1.png');
-  --bullet-style: "\1F940";
-  --toggle-emoji: "\127801";
-  --font-color: var(--color-primary);
-  --border-style: ridge;
-  
-}
-
-[data-selected-theme="blossom-orange"] {
+:root, [data-selected-theme="blossom-orange"] {
   --color-primary: #ffad63;
   --color-primary-dark: #b15404;
   /* Primary needs to contrast with background */
@@ -31,6 +13,22 @@
   --font-color: var(--color-secondary-dark);
   --border-style: solid;
 } 
+
+[data-selected-theme="dark-forest"] { 
+  --color-primary: #f5f5f5;
+  --color-primary-dark: #d5d5d5;
+  /* Primary needs to contrast with background */
+  --color-secondary: #236C5C;
+  --color-secondary-dark: #034C3C;
+  --color-accent: #ec6769;
+  --background-gif: url('../assets/gifs/dark-forest.gif');
+  --background-jpg: url('../assets/images/dark-forest.jpg');
+  --home-image: url('../assets/images/green-triangle-1.png');
+  --bullet-style: "\1F940";
+  --toggle-emoji: "\127801";
+  --font-color: var(--color-primary);
+  --border-style: ridge;
+}
 
 [data-selected-theme="nightwing-blue"] { 
   --color-primary:#99CCFF;
