@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -51,8 +51,8 @@
                 ><span class="nf-md-tag_heart"></span
               ></span>
             </button>
-            <button class="tablinks" data-origin="projects">
-              projects<span class="icon-container"
+            <button class="tablinks" data-origin="devlog">
+              devlog<span class="icon-container"
                 ><span class="nf-md-wrench"></span
               ></span>
             </button>
@@ -69,13 +69,12 @@
             </div>
             <div class="mainbar tab-column">
               <p>
-                Software engineer, artist, passable employee, generally
-                okay person. <br />Currently employed at Lowe's working for
-                their Telemetry Platform, specializing in <b>GoLang</b>,
-                <b>React</b>, and <b>Kubernetes</b>. <br />Feel free to browse
-                around the site, I've got professional and casual things here so
-                you get a good idea of both my technical experience and
-                personality. :)
+                Software engineer, artist, passable employee, generally okay
+                person. <br />Currently employed at Lowe's working for their
+                Telemetry Platform, specializing in <b>GoLang</b>, <b>React</b>,
+                and <b>Kubernetes</b>. <br />Feel free to browse around the
+                site, I've got professional and casual things here so you get a
+                good idea of both my technical experience and personality. :)
               </p>
               <p style="font-size: 1rem">
                 If the background is too active for your eyes, feel free to
@@ -102,14 +101,14 @@
                 </li>
                 <br />
                 <li>
-                  <a href="assets/VelezVillanueva-Resume.pdf" target="_blank"
+                  <a href="assets/VelezVillanuevaResume.pdf" target="_blank"
                     >Resume</a
                   ><span
                     style="
                       text-shadow: 0px 0px 3px var(--color-secondary);
                       color: var(--color-accent);
                       margin-left: 5px;
-                      font-family: 'NerdFont';
+                      font-family: &quot;NerdFont&quot;;
                       font-size: medium;
                     "
                     class="nf-md-download"
@@ -196,13 +195,15 @@
             <div class="mainbar tab-column">
               <h4>Music</h4>
               <p>
-                I actually majored in Music Composition in college, but
-                nowadays I just play, don't really write anymore. I play
-                Bass guitar mainly these days, and here's my Spotify.
+                I actually majored in Music Composition in college, but nowadays
+                I just play, don't really write anymore. I play Bass guitar
+                mainly these days, and here's my Spotify.
               </p>
               <a>https://open.spotify.com/user/avelez343</a>
               <h4>Reading</h4>
-              <span style="color: var(--font-color);">Reading: <b>Braiding Sweetgrass</b></span><a></a>
+              <span style="color: var(--font-color)"
+                >Reading: <b>Braiding Sweetgrass</b></span
+              ><a></a>
               <p>Read in 2025:</p>
               <ul>
                 <li>Books of Earthsea - Ursula K LeGuin</li>
@@ -215,52 +216,87 @@
               </ul>
               <h4>Photography</h4>
               <p>
-                I picked up a Canon EOS Rebel T7 a few months ago, so now I've got an album here.<br />
+                I picked up a Canon EOS Rebel T7 a few months ago, so now I've
+                got an album here.<br />
               </p>
             </div>
           </div>
 
-          <div data-target="projects" class="tab-content">
+          <div data-target="devlog" class="tab-content">
             <div class="sidebar tab-column">
-              <h2>projects</h2>
+              <h2>Devlog</h2>
               <ul class="sidebar-list">
+                <li><a href="#" data-content="active">active</a></li>
+                <br />
                 <li><a href="#" data-content="web">web dev</a></li>
                 <br />
-                <li><a href="#" data-content="backend">backend</a></li>
+                <li><a href="#" data-content="fullstack">fullstack</a></li>
                 <br />
                 <li><a href="#" data-content="devops">devops</a></li>
-                <br />
-                <li><a href="#" data-content="personal">personal</a></li>
               </ul>
             </div>
             <div class="mainbar tab-column">
+              ~
+              <div
+                class="content-section"
+                data-section="active"
+                style="display: block"
+              >
+                <h3>Currently working on . . .</h3>
+                <h4> Studying for the Certified Kubernetes Application Developer (CKAD) Certificate</h4>
+                <h4> Building a home lab with Kubernetes for practice and personal projects</h4>
+                <!-- Add more web projects as needed -->
+              </div>
               <div
                 class="content-section"
                 data-section="web"
-                style="display: block"
+                style="display: none"
               >
                 <h3>Web Development Projects</h3>
                 <div class="project-item">
-                  <p>
-                    This website! Built with HTML, CSS, and vanilla JavaScript.
+                  <h4>Mal's Oceanic Emporium</h4>
+                  <p style="text-size-adjust: 50%">
+                    Neocities website, my first web dev project using basic W3
+                    languages (HTML, CSS, JavaScript).
                   </p>
+                  <a>https://github.com/avvnova/neocities-malmal</a>
                 </div>
                 <div class="project-item">
-                  <p>My Neocities, my first web dev project.</p>
+                  <h4>adrian-ve-vi (this website)</h4>
+                  <a>https://github.com/avvnova/adrian-ve-vi</a>
+                  <ul>
+                    <li><b>16-Mar-2026</b> : Cleaned up projects section</li>
+                    <li><b>16-Mar-2026</b> : Added changelog</li>
+                  </ul>
                 </div>
                 <!-- Add more web projects as needed -->
               </div>
               <div
                 class="content-section"
-                data-section="backend"
+                data-section="fullstack"
                 style="display: none"
               >
-                <h3>Backend Projects</h3>
+                <h3>Fullstack Projects</h3>
                 <div class="project-item">
                   <h4>API Services</h4>
                   <p>
-                    Various backend services built with GoLang and other
-                    technologies.
+                    My primary work has been as a FullStack Developer, building
+                    web applications and APIs. I've worked with various
+                    technologies, including React, Node.js, and Spring Boot for
+                    backend services.
+                  </p>
+                  <p>
+                    At FAST Enterprises, I worked on the Returns and Revenue
+                    Accounting departments, building Web pages and routing
+                    calls in the former that would then route to backend
+                    services in the latter.
+                  </p>
+                  <p>
+                    At Lowes', I have been on teams that develop internal
+                    applications for the enterprise, both for end-users and for
+                    internal services, using Spring Boot, React, Go, and Python. 
+                    My most recent projects involve building internal MCP 
+                    (Model Context Protocol) functionality for our enterprise tech-stack.
                   </p>
                 </div>
                 <!-- Add more backend projects as needed -->
@@ -274,29 +310,27 @@
                 <div class="project-item">
                   <h4>Kubernetes Deployments</h4>
                   <p>
-                    Infrastructure as code and deployment pipelines for various
-                    applications.
+                    My devops tech stack includes the following:
                   </p>
+                  <ul>
+                    <li>Kubernetes</li>
+                    <li>Docker</li>
+                    <li>GCP</li>
+                    <li>AWS</li>
+                    <li>Backstage</li>
+                    <li>ArgoCD</li>
+                    <li>Jenkins</li>
+                    <li>Helm</li>
+                    <li>Elasticsearch</li>
+                    <li>Grafana</li>
+                    <li>Prometheus</li>
+                  </ul>
                 </div>
+                <p> Pretty much all my DevOps work so far has been within Lowe's, but I'm working on doing my own stuff once I get the homelab running.</p>
                 <!-- Add more devops projects as needed -->
-              </div>
-              <div
-                class="content-section"
-                data-section="personal"
-                style="display: none"
-              >
-                <h3>Miscellaneous Projects</h3>
-                <div class="project-item">
-                  <h4>Side Experiments</h4>
-                  <p>
-                    Various personal coding experiments and learning projects.
-                  </p>
-                </div>
-                <!-- Add more personal projects as needed -->
-              </div>
             </div>
           </div>
-
+          </div>
           <div data-target="blog" class="tab-content">
             <div class="sidebar tab-column">
               <h2>buh</h2>
@@ -381,7 +415,7 @@
               </ul>
             </div>
           </div>
-          <img src="" class="tabimage" data-target="projects" />
+          <img src="" class="tabimage" data-target="devlog" />
         </div>
         <script src="scripts/content-switcher.js"></script>
       </div>
@@ -410,27 +444,13 @@
               data-target="about"
               src="assets/images/green-triangle.png"
             />
-            <img
-              id="projects"
-              alt="TestImage4"
-              class="side-image"
-              data-target="projects"
-              src=""
-            />
-            <img
-              id="blog"
-              alt="TestImage4"
-              class="side-image"
-              data-target="blog"
-              src=""
-            />
           </div>
           <div class="text-wrapper">
             <h3 data-target="home" alt="test0"></h3>
             <h3 data-target="about" alt="about-text"></h3>
             <h3 data-target="hobbies" alt="hobbies-text"></h3>
-            <h3 data-target="projects" alt="projects text"></h3>
-            <h3 data-target="blog" alt="blog text"></h3>
+            <h3 data-target="devlog" alt="devlog-text"></h3>
+            <h3 data-target="blog" alt="blog-text"></h3>
             <h3></h3>
           </div>
         </div>
@@ -490,7 +510,7 @@
         </div>
       </div>
       <div id="credits" class="flexbox-item">
-        Built and maintained in Charlotte, NC. © Copyright 2025
+        Built and maintained in Charlotte, NC. © Copyright 2026
       </div>
       <div id="themes" class="dropdown flexbox-item">
         <button class="dropdown-btn">
