@@ -223,6 +223,11 @@ footer{ bottom: 0%; }
   }
 
   /* Hide right side wrapper on mobile for cleaner layout */
+
+  #name-title {
+    display: none;
+  }
+  
   #rhs-wrapper {
     display: none;
   }
