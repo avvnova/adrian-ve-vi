@@ -224,6 +224,11 @@ footer{ bottom: 0%; }
     flex: 1 1 100%;
   }
 
+  /* Hide right side wrapper on mobile for cleaner layout */
+  #rhs-wrapper {
+    display: none;
+  }
+
 
   .logo-wrapper {
     margin-top: 5%;
