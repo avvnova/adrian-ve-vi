@@ -50,11 +50,11 @@
 
 [data-selected-theme="gemstone"] { 
   --color-primary:#ffe6f2;
-  --color-primary-dark:#ff0066;
+  --color-primary-dark:#b43d6c;
   /* Primary needs to contrast with background */
-  --color-secondary:#00e6e6;
+  --color-secondary:#3086a1;
   --color-secondary-dark:#66004d;
-  --color-accent:#d6ffff;
+  --color-accent:#00e6e6;
   --background-gif: url('../assets/gifs/gemstone.gif');
   --background-jpg: url('../assets/images/gemstone.jpg');
   --home-image: url('../assets/images/green-triangle-.png');

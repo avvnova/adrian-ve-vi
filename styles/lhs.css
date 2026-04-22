@@ -117,9 +117,13 @@ a.active-content {
   margin-bottom: 0px;
 }
 
+.mainbar{
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
 .mainbar p{
   padding-left: 10px;
-  overflow:auto;
 }
 
 .tab-column{
