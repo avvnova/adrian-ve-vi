@@ -99,6 +99,7 @@ a.active-content {
 
 .sidebar{
   min-width: 150px;
+  overflow:hidden;
 }
 
 .sidebar-list{

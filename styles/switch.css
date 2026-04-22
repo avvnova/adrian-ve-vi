@@ -3,9 +3,8 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 2.8vw;
-  right: 0.1vw;
-  height: 2.5vh;
+  width: 50px;
+  height: 26px;
   margin: 3px;
   border: 3px groove var(--color-primary-dark);
 }
@@ -34,8 +33,8 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 2.5vh;
-  width: 1.2vw;
+  height: 20px;
+  width: 20px;
   left: 0;
   bottom: 0;
   background-color: var(--color-accent);
@@ -52,27 +51,11 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(1.6vw);
-  -ms-transform: translateX(1.6vw);
-  transform: translateX(1.6vw);
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
 }
 
 /* Mobile responsive styles for switch */
 @media screen and (max-width: 768px) {
-  .switch {
-    width: 36px;
-    height: 20px;
-    border-width: 1px;
-  }
-  
-  .slider:before {
-    height: 20px;
-    width: 18px;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(18px);
-    -ms-transform: translateX(18px);
-    transform: translateX(18px);
-  }
 }

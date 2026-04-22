@@ -23,8 +23,11 @@
   display: none;
   position: absolute;
   height: inherit;
-  min-height: 350px;
-  min-width: 200px;
+  width: inherit;
+  
+  max-width: 50%;
+  max-height: 50%;
+
   box-shadow: 0 0 5px var(--color-accent), 0 0 10px var(--color-accent), 0 0 20px var(--color-accent);
 }
 #logo{

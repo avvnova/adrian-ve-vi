@@ -33,7 +33,7 @@
 [data-selected-theme="nightwing-blue"] { 
   --color-primary:#99CCFF;
   --color-primary-dark:#6699CC;
-  --color-secondary:#303043;
+  --color-secondary:#334466;
   --color-secondary-dark:#000033;
   --color-accent:#3366CC;
   --background-gif: url('../assets/gifs/nightwing-blue.gif');
@@ -44,12 +44,16 @@
   --border-style: groove;
 }
 
+[data-selected-theme="nightwing-blue"] h3 {
+  color: var(--color-primary);
+}
+
 [data-selected-theme="gemstone"] { 
-  --color-primary:#ffdeef;
-  --color-primary-dark:#a9376c;
+  --color-primary:#ffe6f2;
+  --color-primary-dark:#ff0066;
   /* Primary needs to contrast with background */
-  --color-secondary:#26939f;
-  --color-secondary-dark:#0d2e56;
+  --color-secondary:#00e6e6;
+  --color-secondary-dark:#66004d;
   --color-accent:#d6ffff;
   --background-gif: url('../assets/gifs/gemstone.gif');
   --background-jpg: url('../assets/images/gemstone.jpg');
@@ -59,12 +63,21 @@
   --border-style: double;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    height:100vh;
-    width:100vw;
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 body.freezer-on {
@@ -97,17 +110,16 @@ a{
 
 #title{
   margin: 5px;
-  font-size: 3vh;
+  font-size: 1.5rem;
 }
 
 h1{
   font-family: '04B_30';
-  font-size: 2rem;
+  font-size: 24px;
 }
 
 h2 {
   font-family: '04B_30';
-  font-size: 1.75rem;
   color: var(--color-primary);
   -webkit-text-stroke: 1px var(--color-primary-dark);
   text-shadow:1px 5px 1px var(--color-primary-dark);
@@ -175,19 +187,25 @@ footer{ bottom: 0%; }
   flex-shrink: 1;
 }
 .margin{
+  display: flex;
+  flex-direction: row;
   color: var(--color-primary);
   background-color: var(--color-secondary);
   position: fixed;
+  left: 0;
+  right: 0;
   justify-content: space-between;
-  height: 4vh;
+  align-items: center;
+  height: 48px;
   z-index: 3;
+  padding: 0 15px;
 }
 
 .socicon{
-  height:3vh;
+  height: 24px;
 }
 .socicon:hover{
- height: 3.3vh;
+ height: 26px;
 }
 
 #lhs-wrapper{ flex: 1 1 60%; }
@@ -211,6 +229,10 @@ footer{ bottom: 0%; }
 
   .flexbox-container {
     flex-direction: column;
+  }
+
+  .margin {
+    flex-direction: row;
   }
 
   main.flexbox-container {
@@ -258,15 +280,17 @@ footer{ bottom: 0%; }
 
 /* Small mobile devices */
 @media screen and (max-width: 480px) {
+  #title {
+    font-size: 1.1rem;
+  }
+  
   h3 {
     font-size: 2rem;
   }
 
   .margin {
-    padding: 5px 0;
+    padding: 5px 15px;
   }
-
-
 }
 /* Header Fonts */
 @font-face{
