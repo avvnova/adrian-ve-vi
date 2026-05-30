@@ -1,6 +1,6 @@
 (function crtJitter(){
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', crtJitter, { once: true });
+    //document.addEventListener('DOMContentLoaded', crtJitter, { once: true });
     return;
   }
 
@@ -45,7 +45,7 @@
 // Subtle scroll bob effect
 (function scrollBob(){
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', scrollBob, { once: true });
+    // document.addEventListener('DOMContentLoaded', scrollBob, { once: true });
     return;
   }
 
