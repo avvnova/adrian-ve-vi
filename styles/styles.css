@@ -112,21 +112,13 @@ a{
   cursor: pointer;
 }
 
-#title{
-  margin: 5px;
-  font-size: 1.5rem;
-}
-
-h1{
-  font-family: '04B_30';
+/* Moved to .marquee h1 for consistency */
+h1, h2 {
   font-size: 24px;
-}
-
-h2 {
   font-family: '04B_30';
   color: var(--color-primary);
-  -webkit-text-stroke: 1px var(--color-primary-dark);
-  text-shadow:1px 5px 1px var(--color-primary-dark);
+  -webkit-text-stroke: 0.5px var(--color-primary-dark);
+  text-shadow:1px 5px 2px var(--color-primary-dark);
 }
 
 h3{
@@ -158,6 +150,28 @@ footer{ bottom: 0%; }
   min-width: 30%;
 }
 
+#marquee-container {
+  overflow: hidden;
+  display: flex;
+}
+
+/* .marquee class is toggled by background-toggle.js to control animation state */
+#marquee-container h1 {
+  margin: 5px;
+  padding-right: 100vw;
+  font-size: 1.75rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.marquee-clone {
+  display: none;
+}
+
+.marquee .marquee-clone {
+  display: block;
+}
+
 .crt {
  position: fixed;
  top: 0;
@@ -181,6 +195,7 @@ footer{ bottom: 0%; }
   width: 100vw;
   height: 100vh;
 }
+
 .flexbox-container{
   display: flex;
   flex-direction: row;
@@ -190,6 +205,7 @@ footer{ bottom: 0%; }
 .flexbox-item{ 
   flex-shrink: 1;
 }
+
 .margin{
   display: flex;
   flex-direction: row;
@@ -284,9 +300,6 @@ footer{ bottom: 0%; }
 
 /* Small mobile devices */
 @media screen and (max-width: 480px) {
-  #title {
-    font-size: 1.1rem;
-  }
   
   h3 {
     font-size: 2rem;

@@ -21,6 +21,12 @@
   const smoothing = 0.15;    // approach [0..1], higher = snappier
 
   function frame(now){
+    if (!document.body.classList.contains('freezer-on')) {
+      target.style.transform = baseTransform;
+      requestAnimationFrame(frame);
+      return;
+    }
+
     if (!lastUpdate || now - lastUpdate > updateEveryMs) {
       destX = (Math.random() * 2 - 1) * intensityPx;
       destY = (Math.random() * 2 - 1) * intensityPx;
@@ -82,7 +88,7 @@
     const sinceUser = now - lastUserChangeAt;
     const canBob = sinceUser > settleMs && !isTouching && !atScrollBounds();
 
-    if (canBob) {
+    if (canBob && document.body.classList.contains('freezer-on')) {
       const t = (now % periodMs) / periodMs; // 0..1
       const y = baseY + Math.sin(t * Math.PI * 2) * amplitudePx;
       window.scrollTo({ top: y, left: window.scrollX });
