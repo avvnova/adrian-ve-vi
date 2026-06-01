@@ -48,6 +48,10 @@
   color: var(--color-primary);
 }
 
+[data-selected-theme="nightwing-blue"] a {
+    text-shadow: 1px 1px 1px var(--color-secondary-dark);
+}
+
 [data-selected-theme="gemstone"] { 
   --color-primary:#ffe6f2;
   --color-primary-dark:#b43d6c;
@@ -103,7 +107,7 @@ p, span, a, li{
 
 a{
   color: var(--color-accent);
-  text-shadow: 0px 0px 3px var(--color-secondary);
+  text-shadow: 1px 1px 1px var(--color-secondary-dark);
   -webkit-text-stroke: 0.1px var(--color-accent);
   cursor: pointer;
 }
@@ -129,7 +133,7 @@ h3{
   font-family: 'BitcountGrid';
   font-size: 1.5rem;
   color: var(--color-secondary);
-  text-shadow: 0px 0px 5px var(--color-accent);
+  text-shadow: 1px 1px 1px var(--color-accent);
   margin: 10px;
 }
 
@@ -138,7 +142,7 @@ h4 {
   font-size: 1.25rem;
   color: var(--font-color);
   text-decoration: var(--color-accent) wavy underline;
-  text-shadow: 0px 0px 5px var(--color-pi );
+  text-shadow: 1px 1px 1px var(--color-pi );
 }
 
 br{

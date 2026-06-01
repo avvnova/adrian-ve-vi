@@ -8,7 +8,7 @@
 /* Button itself */
 .dropdown-btn {
   background-color: var(--color-secondary-dark);
-  height: 4vh;
+  height: inherit;
   font-family: PixelifySans;
   color: white;
   padding: 8px;
