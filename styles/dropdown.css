@@ -38,25 +38,9 @@
 .dropdown-list {
   display: none;
   flex-direction: row;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 10;
   position: absolute;
   background-color: var(--color-secondary-dark);
-}
-
-/* Social icons dropdown specific styling */
-#links.dropdown-list {
-  flex-wrap: wrap;
-  justify-content: center;
-  width: max-content;
-  max-width: 200px;
-}
-
-/* Theme buttons dropdown specific styling */
-#elements.dropdown-list {
-  flex-direction: row;
-  right: 0;
 }
 
 /* Links and buttons inside the dropdown */
@@ -85,6 +69,26 @@
   color: var(--color-secondary-dark);
 }
 
+/* Social icons dropdown specific styling */
+#icons.dropdown-list {
+  flex-direction: row;
+  justify-content: center;
+  width: max-content;
+  bottom: 0;
+  top: 0;
+  padding: 2.5px;
+}
+
+/* Theme buttons dropdown specific styling */
+#elements.dropdown-list {
+  flex-direction: row;
+  right: 0;
+}
+
+.socicon{
+  height: 24px;
+}
+
 /* Show the dropdown menu (use JS to add this class to the .dropdown-list container when the user clicks on the dropdown button) */
 .show {display:inline-flex;}
 
@@ -95,6 +99,10 @@
     text-align: center;
   }
   
+  .dropdown-btn{
+    font-size: 0.9rem;
+  }
+
   .dropdown-list {
     position: relative;
     width: 100%;
@@ -103,7 +111,7 @@
   
   .dropdown-list button {
     padding: 8px;
-    font-size: 1.1rem
+    font-size: 0.9rem
   }
 }
 

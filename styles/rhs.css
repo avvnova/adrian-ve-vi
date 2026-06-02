@@ -22,8 +22,10 @@
 .side-image{
   display: none;
   position: absolute;
-  height: inherit;
-  width: inherit;
+  width: 100%;
+  height: auto;
+  min-height: 60%;
+  min-width: 200px;
   box-shadow: 0 0 5px var(--color-accent), 0 0 10px var(--color-accent), 0 0 20px var(--color-accent);
 }
 #logo{

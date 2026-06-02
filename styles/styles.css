@@ -221,13 +221,6 @@ footer{ bottom: 0%; }
   padding: 0 15px;
 }
 
-.socicon{
-  height: 24px;
-}
-.socicon:hover{
- height: 26px;
-}
-
 #lhs-wrapper{ flex: 1 1 60%; }
 #rhs-wrapper{ flex: 2 1 40%; }
 
@@ -296,13 +289,18 @@ footer{ bottom: 0%; }
     text-align: center;
     margin: 5px 0;
   }
+
+  #credits {
+    font-size: 0.8rem;
+  }
+
 }
 
 /* Small mobile devices */
 @media screen and (max-width: 480px) {
-  
-  h3 {
-    font-size: 2rem;
+
+  h3, h4, span, p, li, a {
+    font-size: 1rem;
   }
 
   .margin {
