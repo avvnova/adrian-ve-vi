@@ -291,7 +291,10 @@ footer{ bottom: 0%; }
   }
 
   #credits {
+    padding: 3px;
     font-size: 0.8rem;
+    overflow: scroll;
+    scrollbar-width: none;
   }
 
 }
