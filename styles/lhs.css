@@ -2,7 +2,6 @@
   border: var(--border-style) 10px var(--font-color);
   margin: 10% 10%;
   display: grid;
-  max-height: 80vh;
 }
 /* Style the tab */
 .tab {
@@ -70,7 +69,7 @@
   overflow: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  max-height: 80vh;
+  max-height: 60vh;
 }
 
 .tab-content::-webkit-scrollbar {
