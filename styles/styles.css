@@ -148,7 +148,6 @@ footer{ bottom: 0%; }
   box-sizing: border-box;
   max-width: 75%;
   min-width: 30%;
-  max-height: 80%;
 }
 
 #marquee-container {
