@@ -1,7 +1,8 @@
 #left-board{
   border: var(--border-style) 10px var(--font-color);
-  margin: 15% 15%;
+  margin: 10% 10%;
   display: grid;
+  max-height: 80vh;
 }
 /* Style the tab */
 .tab {
@@ -66,9 +67,10 @@
   border: 1px solid var(--color-primary-dark);
   backdrop-filter: blur(10px);
   border-top: none;
-  overflow: auto;
+  overflow: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  max-height: 80vh;
 }
 
 .tab-content::-webkit-scrollbar {
